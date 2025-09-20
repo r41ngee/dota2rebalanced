@@ -24,44 +24,6 @@
 		"DOTA_Custom7"    								                        "Olive Snake"
 		"DOTA_Custom8"    								                        "Purple Horse"
 
-		//--------------------
-		// Hero names
-		//--------------------
-		// "npc_dota_hero_ancient_apparition"										"Detonator"
-		// "npc_dota_hero_ancient_apparition_barebones"							"Detonator"
-
-		//--------------------
-		// Unit names
-		//--------------------
-		"npc_dota_miniboss_custom"												"Tormentor"
-		
-		//--------------------
-		// Abilities
-		//--------------------
-		"DOTA_Tooltip_ability_example_ability"									"Detonation"
-		"DOTA_Tooltip_ability_example_ability_Description"						"Detonator channels a charge and releases an explosion around the caster if the channel is successful, dealing damage and knocking back all enemies in range of the explosion"
-		"DOTA_Tooltip_ability_example_ability_Lore"								"Boom!"
-		"DOTA_Tooltip_ability_example_ability_duration"							"DURATION:"
-		"DOTA_Tooltip_ability_example_ability_radius"							"RADIUS:"
-		"DOTA_Tooltip_ability_example_ability_distance"							"KNOCKBACK DISTANCE:"
-		"DOTA_Tooltip_ability_example_ability_height"							"KNOCKBACK HEIGHT:"
-		"DOTA_Tooltip_ability_example_ability_damage"							"DAMAGE:"
-		
-		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones"							"#DOTA_Tooltip_ability_chaos_knight_reality_rift"
-		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_Description"				"#DOTA_Tooltip_ability_chaos_knight_reality_rift_Description"
-		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_Lore"						"#DOTA_Tooltip_ability_chaos_knight_reality_rift_Lore"
-		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_Note0"					"Chaos Knight and the target unit are made to face each other, and Chaos Knight and his phantasms are issued an attack order against the target."
-		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_Note1"					"You can use html in tooltips."
-		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_armor_reduction"			"ARMOR REDUCTION:"
-		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_reduction_duration"		"REDUCTION DURATION:"
-		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_illusion_search_radius"	"ILLUSION SEARCH RADIUS:"
-		
-		"DOTA_Tooltip_modifier_chaos_knight_reality_rift_custom"							"Reality Rift"
-		"DOTA_Tooltip_modifier_chaos_knight_reality_rift_custom_Description"				"Armor reduced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
-		
-		"DOTA_Tooltip_Ability_detonator_conjure_image"							"Conjure Image"
-		"DOTA_Tooltip_Ability_detonator_conjure_image_Description"				"Make an illusion out of any creep or hero."
-
 		// Lina Overheat
 		"DOTA_Tooltip_Ability_lina_overheat_nw"									"Overheat"
 		"DOTA_Tooltip_Ability_lina_overheat_nw_Description"								"Attacks apply a stacking mark. At required stacks, the next attack deals %damage% magical damage. Buildings get part of damage."
@@ -74,46 +36,41 @@
 
 		// Pudge
 		"DOTA_Tooltip_ability_special_bonus_unique_pudge_3_Description" "Also increaases strength multiplier {s:bonus_strength_damage} times" 
-		
-		//------------------------
-		// Items
-		//------------------------
-		"DOTA_Tooltip_ability_item_example_item"								"Shield Blaster"
-		"DOTA_Tooltip_ability_item_example_item_Description"					"<h1>Active: Blast</h1> Gives the caster a 50% damage reduction for 4 seconds while firing a projectile that deals damage 125 PURE damage to any enemy it hits."
-		"DOTA_Tooltip_ability_item_example_item_Lore"							"Does anyone read this?"
-		"DOTA_Tooltip_ability_item_example_item_duration"						"DURATION:"
-		"DOTA_Tooltip_ability_item_example_item_damage_reduction"				"%DAMAGE REDUCTION:"
-		"DOTA_Tooltip_ability_item_example_item_radius"							"PROJECTILE RADIUS:"
-		"DOTA_Tooltip_ability_item_example_item_speed"							"PROJECTILE SPEED:"
-		"DOTA_Tooltip_ability_item_example_item_distance"						"DISTANCE:"
-		"DOTA_Tooltip_ability_item_example_item_damage"							"DAMAGE:"
-		"DOTA_Tooltip_ability_item_example_item_bonus_agi"                      "+$agi"
-		"DOTA_Tooltip_ability_item_example_item_bonus_damage"                   "+$damage"
-		
-		"DOTA_Tooltip_modifier_item_shield"										"Blaster Shield"
-		"DOTA_Tooltip_modifier_item_shield_Description"							"All damage is reduced by %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%."
 
-		//------------------------
-		// Tormentor
-		//------------------------
-		"DOTA_Tooltip_Ability_miniboss_unyielding_shield_custom"                "#DOTA_Tooltip_Ability_miniboss_unyielding_shield"
-		"DOTA_Tooltip_Ability_miniboss_unyielding_shield_custom_Description"    "#DOTA_Tooltip_Ability_miniboss_unyielding_shield_Description"
+        // Queen
+        "DOTA_Tooltip_ability_queenofpain_shadow_strike_scepter_Description" "The ability is applied over an area with a radius of %aoe_radius%. When the effect of this ability on an enemy hero ends or refreshes, he emits a scream from the Scream of Pain ability. Increases the duration by %duration_tooltip% and the strike damage by %strike_damage_tooltip%."
 
-		"DOTA_Tooltip_Ability_miniboss_reflect_custom"                          "#DOTA_Tooltip_Ability_miniboss_reflect"
-		"DOTA_Tooltip_Ability_miniboss_reflect_custom_Description"              "#DOTA_Tooltip_Ability_miniboss_reflect_Description"
-		
-		"DOTA_Tooltip_Ability_miniboss_radiance_custom"                         "#DOTA_Tooltip_Ability_miniboss_radiance"
-		"DOTA_Tooltip_Ability_miniboss_radiance_custom_Description"             "#DOTA_Tooltip_Ability_miniboss_radiance_Description"
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new" "Coup de Grace"
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Description" "The hero gains the passive ability to gain focus after an attack. A focus attack deals critical damage. A hero can activate an ability to increase critical damage."
+"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note0" "This ability does not use pseudo-random."
+"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note1" "No longer increases the chance when using Stifling Dagger."
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note2" "Does not affect buildings."
+"DOTA_Tooltip_ability_phantom_assassin_crit_new_crit_chance" "%CHANCE OF FOCUS:"
+"DOTA_Tooltip_ability_phantom_assassin_crit_new_passive_crit_damage" "%PASSIVE DAMAGE:"
+"DOTA_Tooltip_ability_phantom_assassin_crit_new_active_crit_damage" "%ACTIVE DAMAGE:"
+"DOTA_Tooltip_ability_phantom_assassin_crit_new_duration" "GAIN DURATION:"
+"DOTA_Tooltip_ability_phantom_assassin_crit_new_focus_duration" "FOCUS DURATION:"
 
-		"DOTA_Tooltip_modifier_miniboss_unyielding_shield_custom"               "Unyielding Shield"
-		"DOTA_Tooltip_modifier_miniboss_unyielding_shield_custom_Description"   "Protected by a constantly regenerating %dMODIFIER_PROPERTY_TOOLTIP% All Damage Barrier that regens %dMODIFIER_PROPERTY_TOOLTIP2% HP/s."
+		"DOTA_Tooltip_Facet_phantom_assassin_gds" "Overrage"
+		"DOTA_Tooltip_Facet_phantom_assassin_gds_Description" "Reduces cooldown and passive damage, but increases active Coup de Grace damage."
+"DOTA_Tooltip_ability_phantom_assassin_crit_new_Facet_phantom_assassin_gds" "Reduces passive damage to %passive_crit_damage%%%, but increases active damage to %active_crit_damage%%%."
 
-		"DOTA_Tooltip_modifier_miniboss_reflect_custom"                         "Reflect"
-		"DOTA_Tooltip_modifier_miniboss_reflect_custom_Description"             "Reflecting %dMODIFIER_PROPERTY_TOOLTIP%%% damage received to all nearby enemy heroes."
-		
-		"DOTA_Tooltip_modifier_miniboss_radiance_custom"                        "The Shining"
-		"DOTA_Tooltip_modifier_miniboss_radiance_custom_Description"            "Dealing damage to all nearby enemies."
-		"DOTA_Tooltip_modifier_miniboss_radiance_debuff_custom"                 "Burn Damage"
-		"DOTA_Tooltip_modifier_miniboss_radiance_debuff_custom_Description"     "Taking damage per second."
+
+		"DOTA_Tooltip_ability_special_bonus_unique_phantom_assassin_2""-{s:bonus_AbilityCooldown} sec. recharge Coup de Grace"
+
+		"DOTA_Tooltip_modifier_phantom_crit_new_active" "Coup de Grace"
+		"DOTA_Tooltip_modifier_phantom_crit_new_active_Description" "Hero has increased critical hit damage from Coup de Grace"
+
+		"DOTA_Tooltip_modifier_phantom_crit_new_focus" "Coup de Grace Focus"
+		"DOTA_Tooltip_modifier_phantom_crit_new_focus_Description" "The next hit will be critical."
+
+		// NEVERMOVE SHADOW FIEND
+		"DOTA_Tooltip_ability_nevermore_necromastery_Description" "The hero steals the soul of every enemy killed, receiving an attack bonus. After death, releases %soul_release_tooltip %%% of them. The maximum number of souls increases by %max_soul_increase_on_hero_kill% for each hero killed until the ability owner dies."
+"DOTA_Tooltip_ability_nevermore_necromastery_Facet_nevermore_lasting_presence" "
+"DOTA_Tooltip_Facet_nevermore_lasting_presence_Description" "Armor reduction from the Presence of the Dark Lord temporarily increases when a nearby person dies an enemy hero."
+
+		// ZEUS ZUUS
+		"DOTA_Tooltip_ability_zuus_static_field_damage_health_pct" "%DAMAGE FROM CURRENT HEALTH:"
+
 	}
 }
