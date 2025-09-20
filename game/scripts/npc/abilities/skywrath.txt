@@ -1,0 +1,46 @@
+"DOTAAbilities"
+{
+    "skywrath_mage_ancient_seal"
+    {
+        "AbilityValues"
+        {
+            "AbilityCooldown"
+            {
+                "special_bonus_unique_skywrath" "-3"
+            }
+        }
+    }
+
+    "skywrath_mage_mystic_flare"
+    {
+        "AbilityValues"
+        {
+            "damage"
+            {
+                "value" "600 900 1200"
+                "special_bonus_unique_skywrath_5" "+500"
+            }
+        }
+
+        "AbilityCastRange" "950"
+    }
+
+    "skywrath_mage_ruin_and_restoration"
+    {
+        "AbilityValues"
+        {
+            "spell_lifesteal" "15 20 25 30"
+        }
+    }
+
+    "skywrath_mage_arcane_bolt"
+    {
+        "AbilityValues"
+        {
+            "int_multiplier"
+            {
+                "special_bonus_unique_skywrath_2"	"+0.5"
+            }
+        }
+    }
+}

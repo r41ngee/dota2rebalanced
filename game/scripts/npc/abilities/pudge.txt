@@ -1,0 +1,14 @@
+"DOTAAbilities"
+{
+    "pudge_dismember"
+    {
+        "AbilityValues"
+        {
+            "AbilityChannelTime"
+            {
+                "value" "2.25 2.5 2.75"
+            }
+            "AbilityCooldown" "45 40 35"
+        }
+    }
+}

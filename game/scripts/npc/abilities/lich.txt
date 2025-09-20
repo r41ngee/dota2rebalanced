@@ -1,0 +1,17 @@
+"DOTAAbilities" 
+{
+    "lich_frost_nova"
+    {
+        "AbilityValues"
+        {
+            "radius"
+            {
+                "special_bonus_unique_lich_6" "+75"
+            }
+            "aoe_damage"
+            {
+                "special_bonus_unique_lich_6" "+75"
+            }
+        }
+    }
+}

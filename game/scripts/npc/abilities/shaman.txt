@@ -1,0 +1,18 @@
+"DOTAAbilities"
+{
+    "shadow_shaman_voodoo"
+    {
+        "AbilityCooldown" "22 20 18 16"
+    }
+    "shadow_shaman_shackles"
+    {
+        "AbilityValues"
+        {
+            "channel_time"
+            {
+            "value" "2.4 2.9 3.4 3.9"
+            "special_bonus_unique_shadow_shaman_2"	"+0.75"
+            } 
+        }
+    }
+}

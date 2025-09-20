@@ -1,0 +1,74 @@
+"lang"
+{
+    "Language" "russian"
+    "tokens"
+    {
+        // Lina Overheat
+		"DOTA_Tooltip_Ability_lina_overheat_nw"									"Overheat"
+		"DOTA_Tooltip_Ability_lina_overheat_nw_Description"								"Атаки накладывают складывающуюся метку. Когда метка достигает указанного значения, следующая атака по цели нанесет дополнительные %damage% урона. \nПостройки получают %building_damage%%% урона."
+		"DOTA_Tooltip_ability_lina_overheat_nw_damage"								"УРОН:"
+        "DOTA_Tooltip_ability_lina_overheat_nw_building_damage" "%УРОН ПО ПОСТРОЙКАМ: "
+		"DOTA_Tooltip_Ability_lina_overheat_nw_duration"								"ДЛИТЕЛЬНОСТЬ ДЕБАФФА:"
+		"DOTA_Tooltip_Ability_lina_overheat_nw_required_stacks"							"НЕОБХОДИМОЕ КОЛИЧЕСТВО ЭФФЕКТОВ:"
+        "DOTA_Tooltip_Ability_lina_overheat_nw_Note0" "Такой атакой нельзя промахнуться."
+        "DOTA_Tooltip_Ability_lina_overheat_nw_Lore" "Руки волшебницы настолько горячи, что вызывают тепловой удар у врагов."
+
+        "DOTA_Tooltip_modifier_lina_overheat_mark_nw" "Перегрев"
+        "DOTA_Tooltip_modifier_lina_overheat_mark_nw_Description" "Существо подвержено Overheat"
+
+		"DOTA_Tooltip_ability_special_bonus_unique_lina_7" "+{s:bonus_damage}% к урону Overheat"
+
+
+
+		// Pudge
+		"DOTA_Tooltip_ability_special_bonus_unique_pudge_3_Description" "Также увеличивает множитель силы в {s:bonus_strength_damage} раза" 
+
+        // Queen
+        "DOTA_Tooltip_ability_queenofpain_shadow_strike_scepter_Description" "Способность применяется по области радиусом %aoe_radius%. Когда эффект этой способности на вражеском герое заканчивается или обновляется, он издаёт крик от способности Scream of Pain. \nУвеличивает длительность на %duration_tooltip% и урон от попадания на %strike_damage_tooltip%."
+
+        // TEMPLAR
+        "DOTA_Tooltip_ability_templar_assassin_refraction_new" "Refraction"
+		"DOTA_Tooltip_ability_templar_assassin_refraction_new_Lore" "Используя свою псионическую вуаль, Ланайя подчиняет законы природы своей воле."
+		"DOTA_Tooltip_ability_templar_assassin_refraction_new_Description" "Делает владельца неуловимым, увеличивая урон его следующих атак и создавая на нём небольшой барьер. Эти эффекты действуют ограниченное число раз и считаются раздельно. Разбитый барьер заменяется новым до тех пор, пока не израсходуются защитные эффекты способности. Урон, превышающий здоровье барьера, поглощается полностью."
+		"DOTA_Tooltip_ability_templar_assassin_refraction_new_Facet_templar_assassin_refractor" "Когда расходуется защитный эффект, даётся дополнительный эффект урона."
+		"DOTA_Tooltip_ability_templar_assassin_refraction_new_Note0" "Урон, отнимающий здоровье, проходит через защиту и не уменьшает число эффектов способности."
+		"DOTA_Tooltip_ability_templar_assassin_refraction_new_Note1" "Враги видят защитный эффект этой способности."
+		"DOTA_Tooltip_ability_templar_assassin_refraction_new_instances" "ЧИСЛО ЭФФЕКТОВ:"
+		"DOTA_Tooltip_ability_templar_assassin_refraction_new_bonus_damage" "ДОПОЛНИТЕЛЬНЫЙ УРОН:"
+		"DOTA_Tooltip_ability_templar_assassin_refraction_new_duration" "ДЛИТЕЛЬНОСТЬ:"
+		"DOTA_Tooltip_ability_templar_assassin_refraction_new_shield_per_instance" "ЗДОРОВЬЕ БАРЬЕРА ЗА ЭФФЕКТ:"
+
+		// PHANTOM
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new" "Coup de Grace"
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Description" "Герой получает пассивную способность получить фокус после атаки. Атака с фокусом наносит критический урон. \nГерой может активировать способность, чтобы увеличить критический урон."
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note0" "Эта способность не использует псевдо-рандом."
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note1" "Больше не увеличивает шанс при использовании Stifling Dagger."
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note2" "Не действует на постройки."
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_crit_chance" "%ШАНС НА ФОКУС:" 
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_passive_crit_damage" "%ПАССИВНЫЙ УРОН:"
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_active_crit_damage" "%АКТИВНЫЙ УРОН:"
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_duration" "ДЛИТЕЛЬНОСТЬ УСИЛЕНИЯ:"
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_focus_duration" "ДЛИТЕЛЬНОСТЬ ФОКУСА:"
+
+		"DOTA_Tooltip_Facet_phantom_assassin_gds" "Overrage"
+		"DOTA_Tooltip_Facet_phantom_assassin_gds_Description" "Уменьшает перезарядку и пассивный урон, но увеличивает активный урон Coup de Grace."
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Facet_phantom_assassin_gds" "Уменьшает пассивный урон до %passive_crit_damage%%%, но увеличивает активный урон до %active_crit_damage%%%."
+
+
+		"DOTA_Tooltip_ability_special_bonus_unique_phantom_assassin_2" "-{s:bonus_AbilityCooldown} сек. перезарядки Coup de Grace"
+
+		"DOTA_Tooltip_modifier_phantom_crit_new_active" "Coup de Grace"
+		"DOTA_Tooltip_modifier_phantom_crit_new_active_Description" "Герой имеет увеличеный урон с критического удара от Coup de Grace"
+
+		"DOTA_Tooltip_modifier_phantom_crit_new_focus" "Фокус от Coup de Grace"
+		"DOTA_Tooltip_modifier_phantom_crit_new_focus_Description" "Следующий удар будет критическим."
+
+		// NEVERMOVE SHADOW FIEND
+		"DOTA_Tooltip_ability_nevermore_necromastery_Description" "Герой крадет душу каждого убитого врага, получая бонус к атаке. После смерти выпускает %soul_release_tooltip%%% из них. Максимум душ увеличивается на %max_soul_increase_on_hero_kill% за каждого убитого героя, пока владелец способности не умрёт."
+		"DOTA_Tooltip_ability_nevermore_necromastery_Facet_nevermore_lasting_presence" ""
+		"DOTA_Tooltip_Facet_nevermore_lasting_presence_Description" "Снижение брони от Presence of the Dark Lord временно повышается, когда рядом погибает вражеский герой."
+
+		// ZEUS ZUUS
+		"DOTA_Tooltip_ability_zuus_static_field_damage_health_pct" "%УРОН ОТ ТЕКУЩЕГО ЗДОРОВЬЯ:"
+    }
+}

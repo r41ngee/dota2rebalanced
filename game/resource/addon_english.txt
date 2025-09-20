@@ -1,0 +1,119 @@
+"lang"
+{
+	"Language"		"English"
+	"Tokens"
+	{		
+		"game_mode_15"															"DOTA 2 REBALANCED"
+		"addon_game_name"														"DOTA 2 REBALANCED"
+		"DOTA_GameMode_15"                                                      "ALL PICK"
+		"addonname"                                                             "DOTA 2 REBALANCED"
+
+		"Unassigned"      								                        "Unassigned Team"
+		"Spectator"       								                        "Spectator Team"
+		"Neutrals"        								                        "Neutral Team"
+		"NoTeam"          								                        "No Team"
+
+		"DOTA_GoodGuys"   								                        "Radiant"
+		"DOTA_BadGuys"    								                        "Dire"
+		"DOTA_Custom1"    								                        "Pink Dragon"
+		"DOTA_Custom2"    								                        "Orange Dog"
+		"DOTA_Custom3"    								                        "Blue Rooster"
+		"DOTA_Custom4"    								                        "Green Ram"
+		"DOTA_Custom5"    								                        "Brown Rat"
+		"DOTA_Custom6"    								                        "Cyan Boar"
+		"DOTA_Custom7"    								                        "Olive Snake"
+		"DOTA_Custom8"    								                        "Purple Horse"
+
+		//--------------------
+		// Hero names
+		//--------------------
+		// "npc_dota_hero_ancient_apparition"										"Detonator"
+		// "npc_dota_hero_ancient_apparition_barebones"							"Detonator"
+
+		//--------------------
+		// Unit names
+		//--------------------
+		"npc_dota_miniboss_custom"												"Tormentor"
+		
+		//--------------------
+		// Abilities
+		//--------------------
+		"DOTA_Tooltip_ability_example_ability"									"Detonation"
+		"DOTA_Tooltip_ability_example_ability_Description"						"Detonator channels a charge and releases an explosion around the caster if the channel is successful, dealing damage and knocking back all enemies in range of the explosion"
+		"DOTA_Tooltip_ability_example_ability_Lore"								"Boom!"
+		"DOTA_Tooltip_ability_example_ability_duration"							"DURATION:"
+		"DOTA_Tooltip_ability_example_ability_radius"							"RADIUS:"
+		"DOTA_Tooltip_ability_example_ability_distance"							"KNOCKBACK DISTANCE:"
+		"DOTA_Tooltip_ability_example_ability_height"							"KNOCKBACK HEIGHT:"
+		"DOTA_Tooltip_ability_example_ability_damage"							"DAMAGE:"
+		
+		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones"							"#DOTA_Tooltip_ability_chaos_knight_reality_rift"
+		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_Description"				"#DOTA_Tooltip_ability_chaos_knight_reality_rift_Description"
+		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_Lore"						"#DOTA_Tooltip_ability_chaos_knight_reality_rift_Lore"
+		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_Note0"					"Chaos Knight and the target unit are made to face each other, and Chaos Knight and his phantasms are issued an attack order against the target."
+		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_Note1"					"You can use html in tooltips."
+		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_armor_reduction"			"ARMOR REDUCTION:"
+		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_reduction_duration"		"REDUCTION DURATION:"
+		"DOTA_Tooltip_ability_chaos_knight_reality_rift_barebones_illusion_search_radius"	"ILLUSION SEARCH RADIUS:"
+		
+		"DOTA_Tooltip_modifier_chaos_knight_reality_rift_custom"							"Reality Rift"
+		"DOTA_Tooltip_modifier_chaos_knight_reality_rift_custom_Description"				"Armor reduced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
+		
+		"DOTA_Tooltip_Ability_detonator_conjure_image"							"Conjure Image"
+		"DOTA_Tooltip_Ability_detonator_conjure_image_Description"				"Make an illusion out of any creep or hero."
+
+		// Lina Overheat
+		"DOTA_Tooltip_Ability_lina_overheat_nw"									"Overheat"
+		"DOTA_Tooltip_Ability_lina_overheat_nw_Description"								"Attacks apply a stacking mark. At required stacks, the next attack deals %damage% magical damage. Buildings get part of damage."
+		"DOTA_Tooltip_ability_lina_overheat_nw_damage"								"DAMAGE:"
+		"DOTA_Tooltip_ability_lina_overheat_nw_building_damage" 				"%BUILDING DAMAGE:"
+		"DOTA_Tooltip_Ability_lina_overheat_nw_duration"								"DEBUFF DURATION:"
+		"DOTA_Tooltip_Ability_lina_overheat_nw_required_stacks"							"REQUIRED STACKS:"
+		"DOTA_Tooltip_Ability_lina_overheat_nw_Note0" "This attack cannot miss."
+		"DOTA_Tooltip_ability_special_bonus_unique_lina_7" "+{s:bonus_damage} Overheat damage"
+
+		// Pudge
+		"DOTA_Tooltip_ability_special_bonus_unique_pudge_3_Description" "Also increaases strength multiplier {s:bonus_strength_damage} times" 
+		
+		//------------------------
+		// Items
+		//------------------------
+		"DOTA_Tooltip_ability_item_example_item"								"Shield Blaster"
+		"DOTA_Tooltip_ability_item_example_item_Description"					"<h1>Active: Blast</h1> Gives the caster a 50% damage reduction for 4 seconds while firing a projectile that deals damage 125 PURE damage to any enemy it hits."
+		"DOTA_Tooltip_ability_item_example_item_Lore"							"Does anyone read this?"
+		"DOTA_Tooltip_ability_item_example_item_duration"						"DURATION:"
+		"DOTA_Tooltip_ability_item_example_item_damage_reduction"				"%DAMAGE REDUCTION:"
+		"DOTA_Tooltip_ability_item_example_item_radius"							"PROJECTILE RADIUS:"
+		"DOTA_Tooltip_ability_item_example_item_speed"							"PROJECTILE SPEED:"
+		"DOTA_Tooltip_ability_item_example_item_distance"						"DISTANCE:"
+		"DOTA_Tooltip_ability_item_example_item_damage"							"DAMAGE:"
+		"DOTA_Tooltip_ability_item_example_item_bonus_agi"                      "+$agi"
+		"DOTA_Tooltip_ability_item_example_item_bonus_damage"                   "+$damage"
+		
+		"DOTA_Tooltip_modifier_item_shield"										"Blaster Shield"
+		"DOTA_Tooltip_modifier_item_shield_Description"							"All damage is reduced by %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%."
+
+		//------------------------
+		// Tormentor
+		//------------------------
+		"DOTA_Tooltip_Ability_miniboss_unyielding_shield_custom"                "#DOTA_Tooltip_Ability_miniboss_unyielding_shield"
+		"DOTA_Tooltip_Ability_miniboss_unyielding_shield_custom_Description"    "#DOTA_Tooltip_Ability_miniboss_unyielding_shield_Description"
+
+		"DOTA_Tooltip_Ability_miniboss_reflect_custom"                          "#DOTA_Tooltip_Ability_miniboss_reflect"
+		"DOTA_Tooltip_Ability_miniboss_reflect_custom_Description"              "#DOTA_Tooltip_Ability_miniboss_reflect_Description"
+		
+		"DOTA_Tooltip_Ability_miniboss_radiance_custom"                         "#DOTA_Tooltip_Ability_miniboss_radiance"
+		"DOTA_Tooltip_Ability_miniboss_radiance_custom_Description"             "#DOTA_Tooltip_Ability_miniboss_radiance_Description"
+
+		"DOTA_Tooltip_modifier_miniboss_unyielding_shield_custom"               "Unyielding Shield"
+		"DOTA_Tooltip_modifier_miniboss_unyielding_shield_custom_Description"   "Protected by a constantly regenerating %dMODIFIER_PROPERTY_TOOLTIP% All Damage Barrier that regens %dMODIFIER_PROPERTY_TOOLTIP2% HP/s."
+
+		"DOTA_Tooltip_modifier_miniboss_reflect_custom"                         "Reflect"
+		"DOTA_Tooltip_modifier_miniboss_reflect_custom_Description"             "Reflecting %dMODIFIER_PROPERTY_TOOLTIP%%% damage received to all nearby enemy heroes."
+		
+		"DOTA_Tooltip_modifier_miniboss_radiance_custom"                        "The Shining"
+		"DOTA_Tooltip_modifier_miniboss_radiance_custom_Description"            "Dealing damage to all nearby enemies."
+		"DOTA_Tooltip_modifier_miniboss_radiance_debuff_custom"                 "Burn Damage"
+		"DOTA_Tooltip_modifier_miniboss_radiance_debuff_custom_Description"     "Taking damage per second."
+	}
+}

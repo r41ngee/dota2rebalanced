@@ -1,0 +1,10 @@
+"DOTAAbilities"
+{
+    "ancient_apparition_ice_blast"
+    {
+        "AbilityCooldown" "60"
+        "AbilityManaCost" "175 250 325"
+
+        "AbilityDamage" "250 350 450"
+    }
+}

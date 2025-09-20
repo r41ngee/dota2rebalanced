@@ -1,0 +1,23 @@
+"DOTAAbilities"
+{
+    "tiny_avalanche"
+    {
+        "AbilityValues"
+        {
+            "avalanche_damage"
+            {
+                "value" "100 160 220 280"
+            }
+        }
+    }
+    "tiny_toss"
+    {
+        "AbilityValues"
+        {
+            "toss_damage"
+            {
+                "value" "90 150 240 300"
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+"DOTAAbilities"
+{
+    "phantom_assassin_crit_new"
+    {
+        "BaseClass" "ability_lua"
+        "AbilityTextureName" "phantom_assassin_coup_de_grace"
+        "ScriptFile" "ability/phantom_crit_new.lua"
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+        "AbilityType" "ABILITY_TYPE_ULTIMATE"
+        "IsBreakable" "1"
+
+        "AbilityValues"
+        {
+            "crit_chance"
+            {
+                "value" "17"
+            }
+
+            "passive_crit_damage"
+            {
+                "value" "150 200 250"
+                "special_bonus_facet_phantom_assassin_gds" "-50"
+                "DamageTypeTooltip" "DAMAGE_TYPE_PHYSICAL"
+            }
+
+            "active_crit_damage"
+            {
+                "value" "350 400 450"
+                "special_bonus_facet_phantom_assassin_gds" "+100"
+                "DamageTypeTooltip" "DAMAGE_TYPE_PHYSICAL"
+            }
+
+            "duration"
+            {
+                "value" "5 9 13"
+            }
+
+            "focus_duration" "6"
+            "AbilityCooldown"
+            {
+                "value" "90 80 70"
+                "special_bonus_unique_phantom_assassin_2" "-20"
+            }
+            "AbilityManaCost" "75 100 125"
+        }
+    }
+
+    "phantom_assassin_blur"
+    {
+        "DependentOnAbility" "phantom_assassin_crit_new"
+    }
+}

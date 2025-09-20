@@ -1,0 +1,10 @@
+"DOTAAbilities"
+{
+    "shadow_demon_menace"
+    {
+        "AbilityValues"
+        {
+            "stack" "3.25"
+        }
+    }
+}

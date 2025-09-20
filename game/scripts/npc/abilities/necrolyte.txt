@@ -1,0 +1,13 @@
+"DOTAAbilities"
+{
+    "necrolyte_sadist"
+    {
+        "AbilityValues"
+        {
+            "regen_duration"
+            {
+                "value" "6.5"
+            }
+        }
+    }
+}

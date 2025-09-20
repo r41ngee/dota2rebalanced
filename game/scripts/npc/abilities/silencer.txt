@@ -1,0 +1,21 @@
+"DOTAAbilities"
+{
+    "silencer_curse_of_the_silent"
+    {
+        "AbilityValues"
+        {
+            "damage"
+            {
+                "value" "14 20 26 32"
+            }
+        }
+    }
+
+    "silencer_last_word"
+    {
+        "AbilityValues"
+        {
+            "damage" "90 120 150 180"
+        }
+    }
+}

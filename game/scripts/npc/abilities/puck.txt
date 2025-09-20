@@ -1,0 +1,14 @@
+"DOTAAbilities"
+{
+    "puck_waning_rift"
+    {
+        "AbilityValues"
+        {
+            "damage"
+            {
+                "value" "60 130 200 270"
+                "special_bonus_unique_puck_6"	"+125"
+            }
+        }
+    }
+}

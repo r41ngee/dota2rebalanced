@@ -1,0 +1,12 @@
+"DOTAAbilities"
+{
+    "ringmaster_wheel"
+    {
+        "AbilityCastPoint" "0.5 0.45 0.4"
+        
+        "AbilityValues"
+        {
+            "min_range" "0"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+"DOTAAbilities"
+{
+    "lina_fiery_soul"
+    {
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_INNATE_UI | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "Innate" "1"
+        "DependentOnAbility" "lina_laguna_blade"
+    }
+	"lina_overheat_nw"
+	{
+		"BaseClass"             "ability_lua"
+		"AbilityTextureName"    "lina_fiery_soul"
+		"ScriptFile"            "ability/lina_overheat.lua"
+		"AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType" "DAMAGE_TYPE_MAGICAL"
+    	"AbilitySpellDamageValue" "25 50 75 100"  // Базовый урон для амплификации
+    	"UsesSpellAmp"          "1"               // Включаем spell amplification
+		"AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType" "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"BreakableImmunityType" "BREAKABLE_IMMUNITY_ENEMIES_YES"
+		"SpellImmunityType" "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType" "SPELL_DISPELLABLE_YES"
+		"MaxLevel"              "4"
+
+		"AbilityValues"
+		{
+			"damage" 
+			{
+				"value" "25 50 75 100"
+				"special_bonus_unique_lina_7" "+100%"
+				"DamageTypeTooltip" "DAMAGE_TYPE_MAGICAL"
+				"CalculateDamageTooltip" "1"
+			}
+			"building_damage" "5 10 15 20"
+			"duration" "5 7 9 11"
+			"required_stacks" "7 6 5 4"
+		}
+	}
+}	
