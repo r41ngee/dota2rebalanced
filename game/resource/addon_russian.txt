@@ -55,7 +55,10 @@
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Facet_phantom_assassin_gds" "Уменьшает пассивный урон до %passive_crit_damage%%%, но увеличивает активный урон до %active_crit_damage%%%."
 
 
+
 		"DOTA_Tooltip_ability_special_bonus_unique_phantom_assassin_2" "-{s:bonus_AbilityCooldown} сек. перезарядки Coup de Grace"
+
+		"DOTA_Tooltip_ability_phantom_assassin_blur_shard_description"					"Уменьшает перезарядку. Когда владелец совершает убийство, текущие перезарядки всех его способностей, кроме Coup de Grace уменьшаются на %cooldown_refund_pct%%% от максимальных значений."
 
 		"DOTA_Tooltip_modifier_phantom_crit_new_active" "Coup de Grace"
 		"DOTA_Tooltip_modifier_phantom_crit_new_active_Description" "Герой имеет увеличеный урон с критического удара от Coup de Grace"

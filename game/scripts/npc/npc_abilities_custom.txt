@@ -18,6 +18,10 @@
 #base "abilities/skywrath.txt"
 #base "abilities/nevermore.txt"
 
+// 9.00c
+#base "abilities/bane.txt"
+#base "abilities/medusa.txt"
+
 "DOTAAbilities"
 {
 	// ability_datadriven example

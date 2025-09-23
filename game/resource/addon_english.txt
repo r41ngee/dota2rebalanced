@@ -40,20 +40,21 @@
         // Queen
         "DOTA_Tooltip_ability_queenofpain_shadow_strike_scepter_Description" "The ability is applied over an area with a radius of %aoe_radius%. When the effect of this ability on an enemy hero ends or refreshes, he emits a scream from the Scream of Pain ability. Increases the duration by %duration_tooltip% and the strike damage by %strike_damage_tooltip%."
 
+		// Phantom assassin mortred
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new" "Coup de Grace"
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Description" "The hero gains the passive ability to gain focus after an attack. A focus attack deals critical damage. A hero can activate an ability to increase critical damage."
-"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note0" "This ability does not use pseudo-random."
-"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note1" "No longer increases the chance when using Stifling Dagger."
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note0" "This ability does not use pseudo-random."
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note1" "No longer increases the chance when using Stifling Dagger."
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note2" "Does not affect buildings."
-"DOTA_Tooltip_ability_phantom_assassin_crit_new_crit_chance" "%CHANCE OF FOCUS:"
-"DOTA_Tooltip_ability_phantom_assassin_crit_new_passive_crit_damage" "%PASSIVE DAMAGE:"
-"DOTA_Tooltip_ability_phantom_assassin_crit_new_active_crit_damage" "%ACTIVE DAMAGE:"
-"DOTA_Tooltip_ability_phantom_assassin_crit_new_duration" "GAIN DURATION:"
-"DOTA_Tooltip_ability_phantom_assassin_crit_new_focus_duration" "FOCUS DURATION:"
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_crit_chance" "%CHANCE OF FOCUS:"
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_passive_crit_damage" "%PASSIVE DAMAGE:"
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_active_crit_damage" "%ACTIVE DAMAGE:"
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_duration" "GAIN DURATION:"
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_focus_duration" "FOCUS DURATION:"
 
 		"DOTA_Tooltip_Facet_phantom_assassin_gds" "Overrage"
 		"DOTA_Tooltip_Facet_phantom_assassin_gds_Description" "Reduces cooldown and passive damage, but increases active Coup de Grace damage."
-"DOTA_Tooltip_ability_phantom_assassin_crit_new_Facet_phantom_assassin_gds" "Reduces passive damage to %passive_crit_damage%%%, but increases active damage to %active_crit_damage%%%."
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Facet_phantom_assassin_gds" "Reduces passive damage to %passive_crit_damage%%%, but increases active damage to %active_crit_damage%%%."
 
 
 		"DOTA_Tooltip_ability_special_bonus_unique_phantom_assassin_2""-{s:bonus_AbilityCooldown} sec. recharge Coup de Grace"
@@ -64,10 +65,10 @@
 		"DOTA_Tooltip_modifier_phantom_crit_new_focus" "Coup de Grace Focus"
 		"DOTA_Tooltip_modifier_phantom_crit_new_focus_Description" "The next hit will be critical."
 
-		// NEVERMOVE SHADOW FIEND
+		// NEVERMORE SHADOW FIEND
 		"DOTA_Tooltip_ability_nevermore_necromastery_Description" "The hero steals the soul of every enemy killed, receiving an attack bonus. After death, releases %soul_release_tooltip %%% of them. The maximum number of souls increases by %max_soul_increase_on_hero_kill% for each hero killed until the ability owner dies."
-"DOTA_Tooltip_ability_nevermore_necromastery_Facet_nevermore_lasting_presence" "
-"DOTA_Tooltip_Facet_nevermore_lasting_presence_Description" "Armor reduction from the Presence of the Dark Lord temporarily increases when a nearby person dies an enemy hero."
+		"DOTA_Tooltip_ability_nevermore_necromastery_Facet_nevermore_lasting_presence" "
+		"DOTA_Tooltip_Facet_nevermore_lasting_presence_Description" "Armor reduction from the Presence of the Dark Lord temporarily increases when a nearby person dies an enemy hero."
 
 		// ZEUS ZUUS
 		"DOTA_Tooltip_ability_zuus_static_field_damage_health_pct" "%DAMAGE FROM CURRENT HEALTH:"

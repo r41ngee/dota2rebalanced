@@ -46,7 +46,9 @@ end
 
 function modifier_phantom_crit_new_focus:DeclareFunctions()
     return {
-        MODIFIER_EVENT_ON_ATTACK_LANDED
+        MODIFIER_EVENT_ON_ATTACK_LANDED,
+        MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE,
+        MODIFIER_PROPERTY_PROCATTACK_FEEDBACK
     }
 end
 
@@ -96,53 +98,33 @@ function modifier_phantom_crit_new:OnAttackLanded(event)
     if not parent:FindModifierByNameAndCaster("modifier_phantom_crit_new_focus", parent) then
         -- Шанс активации крита
         if RandomFloat(0, 1) < self.crit_chance / 100 then
+        -- if true then
             parent:AddNewModifier(parent, self:GetAbility(), "modifier_phantom_crit_new_focus", {duration = self.focus_duration})
         end
     end
 end
 
-function modifier_phantom_crit_new_focus:OnAttackLanded(event)
+function modifier_phantom_crit_new_focus:GetModifierPreAttack_CriticalStrike(event)
     if not IsServer() then return end
     
     local parent = self:GetParent()
-    if parent ~= event.attacker then return end
-    
-    local target = event.target
-    if target:IsBuilding() then return end
     local ability = self:GetAbility()
     
-    local crit_multiplier
     -- Проверяем, активен ли бафф ульты
     if parent:FindModifierByNameAndCaster("modifier_phantom_crit_new_active", parent) then
-        crit_multiplier = ability:GetSpecialValueFor("active_crit_damage") / 100
+        return ability:GetSpecialValueFor("active_crit_damage")
     else
-        crit_multiplier = ability:GetSpecialValueFor("passive_crit_damage") / 100
+        return ability:GetSpecialValueFor("passive_crit_damage")
     end
+end
+
+-- Эта функция вызывается после крита для эффектов
+function modifier_phantom_crit_new_focus:GetModifierProcAttack_Feedback(event)
+    if not IsServer() then return end
     
-    -- Вычисляем дополнительный урон крита
-    local base_damage = event.damage
-    local bonus_damage = base_damage * crit_multiplier
-    local total_damage = base_damage + bonus_damage
-
-    -- Применяем полный урон (базовый + крит)
-    ApplyDamage({
-        victim = target,
-        attacker = parent,
-        damage = bonus_damage,
-        damage_type = DAMAGE_TYPE_PHYSICAL,
-        ability = ability,
-        damage_flags = DOTA_DAMAGE_FLAG_NO_SPELL_AMPLIFICATION
-    })
-
-    -- Показываем общий урон крита
-    SendOverheadEventMessage(
-        nil,
-        OVERHEAD_ALERT_CRITICAL,
-        target,
-        total_damage,
-        parent
-    )
-
+    local parent = self:GetParent()
+    local target = event.target
+    
     -- Звуковой эффект крита
     parent:EmitSound("Hero_PhantomAssassin.CoupDeGrace.Impact")
     

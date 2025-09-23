@@ -1,0 +1,10 @@
+"DOTAAbilities"
+{
+    "medusa_mana_shield"
+    {
+        "AbilityValues"
+        {
+            "damage_per_mana_per_level" "0.09"
+        }
+    }
+}
