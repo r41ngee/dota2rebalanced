@@ -5,6 +5,14 @@
         "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_INNATE_UI | DOTA_ABILITY_BEHAVIOR_SKIP_FOR_KEYBINDS | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
         "Innate" "1"
         "DependentOnAbility" "lina_laguna_blade"
+
+		"AbilityValues"
+		{
+			"fiery_soul_magic_resist"
+			{
+				"special_bonus_unique_lina_4"		"+2.5"
+			}
+		}
     }
 	"lina_overheat_nw"
 	{

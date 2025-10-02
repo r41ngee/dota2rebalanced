@@ -1,0 +1,41 @@
+"DOTAAbilities"
+{
+    "ogre_magi_fireblast"
+    {
+        "AbilityValues"
+        {
+            "AbilityCooldown"
+            {
+                "value" "14 13 12 11"
+            }
+            "stun_duration" "1.1"
+            "multicast_delay" "0.5"
+        }
+    }
+
+    "ogre_magi_ignite"
+    {
+        "AbilityValues"
+        {
+            "duration" "3.5 4.5 5.5 6.5"
+        }
+    }
+
+    "ogre_magi_multicast"
+    {
+        "AbilityValues"
+        {
+            "multicast_2_times" 
+            {"value" "50"}
+            "multicast_3_times"
+            {"value" "0 25 25"}
+            "multicast_4_times"
+            {"value" "0 0 10"}
+
+            "strength_mult"
+            {
+                "special_bonus_facet_ogre_magi_fat_chance" "=0.04"
+            }
+        }
+    }
+}

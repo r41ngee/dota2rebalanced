@@ -22,6 +22,11 @@
 #base "abilities/bane.txt"
 #base "abilities/medusa.txt"
 
+#base "abilities/antimage.txt"
+#base "abilities/ogre_magi.txt"
+
+#base "abilities/lion.txt"
+
 "DOTAAbilities"
 {
 	// ability_datadriven example

@@ -73,5 +73,47 @@
 		// ZEUS ZUUS
 		"DOTA_Tooltip_ability_zuus_static_field_damage_health_pct" "%DAMAGE FROM CURRENT HEALTH:"
 
+		// ANTIMAGE
+		"DOTA_Tooltip_ability_antimage_counterspell"									"Counterspell"
+		"DOTA_Tooltip_ability_antimage_counterspell_Description" "Passively increases magic resistance. It can be used to create an anti-magic shield around itself that blocks and deflects all directed spells."
+		"DOTA_Tooltip_ability_antimage_counterspell_Lore" "By concentrating, the Anti-Mage turns innate resistance into a precise counterattack."
+		"DOTA_Tooltip_ability_antimage_counterspell_Note0" "Passive magic resistance is disabled by break."
+
+		"DOTA_Tooltip_ability_antimage_counterspell_magic_resistance" "%MAGIC RESISTANCE:"
+		"DOTA_Tooltip_ability_antimage_counterspell_duration" "DURATION:"
+		"DOTA_Tooltip_ability_antimage_counterspell_mana_drain_percent" "%MANA BURNED:"
+
+		"DOTA_Tooltip_ability_antimage_counterspell_Facet_antimage_magebanes_mirror" "After deflecting the spell, this ability will burn the offender's mana in proportion to the spent and cause him damage in the amount of %damage_from_mana_drain_percent%%% of the mana burned (but not more than %max_damage_from_mana_drain% per spell)."
+
+
+		"DOTA_Tooltip_ability_antimage_counterspell_shard_Description" "Creates the illusion of a hero next to a hero whose spell has been deflected. Upon subsequent activation of Counterspell, the effect also works on the created illusion."
+		"DOTA_Tooltip_ability_antimage_counterspell_duration_illusion" "ILLUSION DURATION:"
+		"DOTA_Tooltip_ability_antimage_counterspell_outgoing_damage_tooltip" "% DAMAGE OF the ILLUSION:"
+		"DOTA_Tooltip_ability_antimage_counterspell_incoming_damage "%ILLUSION DAMAGE RECEIVED:"
+
+		"DOTA_Tooltip_ability_antimage_counterspell_ally"								"Counterspell Ally"
+		"DOTA_Tooltip_ability_antimage_counterspell_ally_Description" "Creates an anti-magic shield around the selected allied hero, which blocks and reflects all directed spells, creating the illusion of the ability owner next to the offenders. When Counterspell is subsequently activated, the effect also works on the created illusion."
+		"DOTA_Tooltip_ability_antimage_counterspell_ally_Lore" "The Antimage is ready to tolerate at least a little bit only one kind of magic — friendship."
+		"DOTA_Tooltip_ability_antimage_counterspell_ally_Note0" "Is used without turning to the target.It has the same level as Counterspell. If Counterspell is not learned, the ability will be inactive."
+
+		"DOTA_Tooltip_ability_antimage_counterspell_ally_mana_drain_percent" "%MANA BURNED:"
+		"DOTA_Tooltip_ability_antimage_counterspell_ally_duration_illusion" "ILLUSION DURATION:"
+		"DOTA_Tooltip_ability_antimage_counterspell_ally_outgoing_damage_tooltip" "%ILLUSION DAMAGE:"
+		"DOTA_Tooltip_ability_antimage_counterspell_ally_incoming_damage" "%ILLUSION INCOMING DAMAGE:"
+
+		"DOTA_Tooltip_ability_antimage_counterspell_ally_Facet_antimage_magebanes_mirror" "After deflecting the spell, this ability will burn the offender's mana in proportion to the spent and cause him damage in the amount of %damage_from_mana_drain_percent%%% of the mana burned (but not more than %max_damage_from_mana_drain% per spell)."
+		
+		// LION
+		"DOTA_Tooltip_ability_lion_mana_sacrifice" "Mana Sacrifice"
+		"DOTA_Tooltip_ability_lion_mana_sacrifice_Description" "The hero sacrifices his mana for life. Each second of the effect, the hero loses a percentage of his maximum mana, in return for a percentage of his maximum health. Lasts %duration% sec.\nThe ability is interrupted if the hero restores health completely or spends all mana."
+		"DOTA_Tooltip_ability_lion_mana_sacrifice_Lore" "The Demonologist sacrifices magical energy to survive."
+		"DOTA_Tooltip_ability_lion_mana_sacrifice_hp_regen_per_second_pct" "%MAX HEALTH REGEN:"
+		"DOTA_Tooltip_ability_lion_mana_sacrifice_mana_burn_per_second_pct" "%MAX MANA LOSS:"
+
+		"DOTA_Tooltip_ability_special_bonus_unique_lion_2" "+{s:bonus_shard_bonus_targets} Mana Drain targets"
+		"DOTA_Tooltip_ability_lion_mana_drain_shard_description" "Increases the range of the explosion. The owner of the ability becomes immune to effects and receives +%magic_resist%%% magic resistance during its use."
+
+		"DOTA_Tooltip_modifier_mana_sacrifice" "Mana Sacrifice"
+		"DOTA_Tooltip_modifier_mana_sacrifice_Description" "Restores health, sacrificing mana."
 	}
 }

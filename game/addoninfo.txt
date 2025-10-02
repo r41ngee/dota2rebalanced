@@ -3,7 +3,6 @@
 	TeamCount = 2
 	maps = 
 	[
-		"template_map",
 		"dota",
 	]
 	IsPlayable = 1
@@ -15,10 +14,6 @@
 		{
 			MaxPlayers = 10
 			map = "dota"
-		},
-		{
-			MaxPlayers = 2
-			map = "template_map"
 		},
 	]
 	HideInTools = false
