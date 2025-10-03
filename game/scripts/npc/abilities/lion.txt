@@ -38,6 +38,8 @@
             "tick_rate" "10"
 
             "duration" "7"
+
+            "projectile_speed" "1000"
         }
     }
 

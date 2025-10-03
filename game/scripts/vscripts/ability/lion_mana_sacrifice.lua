@@ -8,7 +8,7 @@ function lion_mana_sacrifice:OnSpellStart()
     local target = self:GetCursorTarget()
 
     local projectile_name = "particles/units/heroes/hero_necrolyte/necrolyte_pulse_friend.vpcf"
-    local projectile_speed = 1000
+    local projectile_speed = self:GetSpecialValueFor("projectile_speed")
     local projectile_vision = 300
 
     local projectile_data = {
