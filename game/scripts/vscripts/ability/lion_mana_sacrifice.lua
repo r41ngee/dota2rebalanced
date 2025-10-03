@@ -1,7 +1,46 @@
 lion_mana_sacrifice = class({})
+function lion_mana_sacrifice:Precache(context)
+    PrecacheResource("particle", "particles/units/heroes/hero_necrolyte/necrolyte_pulse_friend.vpcf", context)
+end
+
 
 function lion_mana_sacrifice:OnSpellStart()
     local target = self:GetCursorTarget()
+    local caster = self:GetCaster()
+
+    if target == caster then
+        target:AddNewModifier(
+            self:GetCaster(),
+            self,
+            "modifier_mana_sacrifice",
+            {
+                duration = self:GetSpecialValueFor("duration")
+            }
+        )
+        return
+    end
+
+    local projectile_name = "particles/units/heroes/hero_necrolyte/necrolyte_pulse_friend.vpcf"
+    local projectile_speed = self:GetSpecialValueFor("projectile_speed")
+    local projectile_vision = 300
+
+    local projectile_data = {
+        Target = target,
+        Source = caster,
+        EffectName = projectile_name,
+        iMoveSpeed = projectile_speed,
+        bProvidesVision = true,
+        iVisionRadius = projectile_vision,
+        bVisibleToEnemies = true,
+        bDodgeable = false,
+        iSourceAttachment = DOTA_PROJECTILE_ATTACHMENT_ATTACK_1,
+        iVisionTeamNumber = caster:GetTeamNumber(),
+        Ability = self
+    }
+
+    ProjectileManager:CreateTrackingProjectile(projectile_data)
+end
+function lion_mana_sacrifice:OnProjectileHit(target, location)
     target:AddNewModifier(
         self:GetCaster(),
         self,

@@ -105,7 +105,8 @@
 		
 		// LION
 		"DOTA_Tooltip_ability_lion_mana_sacrifice" "Mana Sacrifice"
-		"DOTA_Tooltip_ability_lion_mana_sacrifice_Description" "The hero sacrifices his mana for life. Each second of the effect, the hero loses a percentage of his maximum mana, in return for a percentage of his maximum health. Lasts %duration% sec.\nThe ability is interrupted if the hero restores health completely or spends all mana."
+		"DOTA_Tooltip_ability_lion_mana_sacrifice_Description" "The hero sacrifices his mana for life. Each second of the effect, the hero loses a percentage of his maximum mana, in return for a percentage of his maximum health. Lasts %duration% sec.\nThe ability is interrupted if the hero restores health completely or spends all mana, or if the hero receives damage from an enemy hero."
+		"DOTA_Tooltip_ability_lion_mana_sacrifice_Note0" "If cast on an allied hero, the ability will create projectile with speed %projectile_speed%."
 		"DOTA_Tooltip_ability_lion_mana_sacrifice_Lore" "The Demonologist sacrifices magical energy to survive."
 		"DOTA_Tooltip_ability_lion_mana_sacrifice_hp_regen_per_second_pct" "%MAX HEALTH REGEN:"
 		"DOTA_Tooltip_ability_lion_mana_sacrifice_mana_burn_per_second_pct" "%MAX MANA LOSS:"

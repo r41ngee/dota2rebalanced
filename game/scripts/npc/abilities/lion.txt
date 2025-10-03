@@ -18,6 +18,7 @@
         "MaxLevel" "1"
 
         "AbilityCastPoint" "0.5"
+        "AbilityCastRange" "700"
 
         "AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 
@@ -38,6 +39,8 @@
             "tick_rate" "10"
 
             "duration" "7"
+
+            "projectile_speed" "1000"
         }
     }
 

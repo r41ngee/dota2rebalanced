@@ -121,7 +121,8 @@
 
 		// LION
 		"DOTA_Tooltip_ability_lion_mana_sacrifice" "Mana Sacrifice"
-		"DOTA_Tooltip_ability_lion_mana_sacrifice_Description" "Герой жертвует своей маной ради жизни. Каждую секунду действия эффекта герой теряет процент от максимальной маны, взамен получая процент от максимального здоровья. Действует %duration% сек.\nСпособность прерывается, если герой восстановит здоровье полностью или потратит всю ману."
+		"DOTA_Tooltip_ability_lion_mana_sacrifice_Description" "Герой жертвует своей маной ради жизни. Каждую секунду действия эффекта герой теряет процент от максимальной маны, взамен получая процент от максимального здоровья. Действует %duration% сек.\nСпособность прерывается, если герой восстановит здоровье полностью или потратит всю ману, или если герой получит урон от вражеского героя."
+		"DOTA_Tooltip_ability_lion_mana_sacrifice_Note0" "Если способность применена на союзного героя, она создаст снаряд с скоростью %projectile_speed%."
 		"DOTA_Tooltip_ability_lion_mana_sacrifice_Lore" "Демонолог жертвует магической энергией, чтобы выжить."
 		"DOTA_Tooltip_ability_lion_mana_sacrifice_hp_regen_per_second_pct" "%ВОССТАНОВЛЕНИЕ ОТ МАКС. ЗДОРОВЬЯ:"
 		"DOTA_Tooltip_ability_lion_mana_sacrifice_mana_burn_per_second_pct" "%ПОТЕРЯ МАКС. МАНЫ:"
