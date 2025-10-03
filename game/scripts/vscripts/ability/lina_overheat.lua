@@ -23,6 +23,7 @@ function modifier_lina_overheat_nw:OnAttackLanded(event)
 
     local parent = self:GetParent()
     local ability = self:GetAbility()
+    if parent:PassivesDisabled() then return end
 
     if parent ~= event.attacker then return end
 
