@@ -24,7 +24,7 @@
     	"AbilitySpellDamageValue" "25 50 75 100"  // Базовый урон для амплификации
     	"UsesSpellAmp"          "1"               // Включаем spell amplification
 		"IsBreakable" "1"
-		"SpellImmunityType" "SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellImmunityType" "SPELL_IMMUNITY_ENEMIES_YES"
 		"SpellDispellableType" "SPELL_DISPELLABLE_YES"
 		"MaxLevel"              "4"
 
