@@ -19,15 +19,13 @@
 
         // Lina Overheat
 		"DOTA_Tooltip_Ability_lina_overheat_nw"									"Overheat"
-		"DOTA_Tooltip_Ability_lina_overheat_nw_Description"								"Атаки накладывают складывающуюся метку. Когда метка достигает указанного значения, следующая атака по цели нанесет дополнительные %damage% урона. \nПостройки получают %building_damage%%% урона."
+		"DOTA_Tooltip_Ability_lina_overheat_nw_Description"								"Атаки накладывают складывающуюся метку. Когда метка достигает указанного значения, следующая атака по цели нанесет дополнительный урон. Метка длится %duration% сек."
 		"DOTA_Tooltip_ability_lina_overheat_nw_damage"								"УРОН:"
         "DOTA_Tooltip_ability_lina_overheat_nw_building_damage" "%УРОН ПО ПОСТРОЙКАМ: "
-		"DOTA_Tooltip_Ability_lina_overheat_nw_duration"								"ДЛИТЕЛЬНОСТЬ ДЕБАФФА:"
 		"DOTA_Tooltip_Ability_lina_overheat_nw_required_stacks"							"НЕОБХОДИМОЕ КОЛИЧЕСТВО ЭФФЕКТОВ:"
-        "DOTA_Tooltip_Ability_lina_overheat_nw_Note0" "Такой атакой нельзя промахнуться."
         "DOTA_Tooltip_Ability_lina_overheat_nw_Lore" "Руки волшебницы настолько горячи, что вызывают тепловой удар у врагов."
 
-        "DOTA_Tooltip_modifier_lina_overheat_mark_nw" "Перегрев"
+        "DOTA_Tooltip_modifier_lina_overheat_nw_stack" "Перегрев"
         "DOTA_Tooltip_modifier_lina_overheat_mark_nw_Description" "Существо подвержено Overheat"
 
 		"DOTA_Tooltip_ability_special_bonus_unique_lina_7" "+{s:bonus_damage}% к урону Overheat"

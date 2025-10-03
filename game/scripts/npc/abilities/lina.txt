@@ -38,7 +38,7 @@
 				"CalculateDamageTooltip" "1"
 			}
 			// "building_damage" "5 10 15 20"
-			"duration" "5 7 9 11"
+			"duration" "8"
 			"required_stacks" "7 6 5 4"
 		}
 	}
