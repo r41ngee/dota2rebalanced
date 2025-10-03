@@ -23,8 +23,6 @@
 		"AbilityUnitDamageType" "DAMAGE_TYPE_MAGICAL"
     	"AbilitySpellDamageValue" "25 50 75 100"  // Базовый урон для амплификации
     	"UsesSpellAmp"          "1"               // Включаем spell amplification
-		"AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType" "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
 		"BreakableImmunityType" "BREAKABLE_IMMUNITY_ENEMIES_YES"
 		"SpellImmunityType" "SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType" "SPELL_DISPELLABLE_YES"
@@ -39,9 +37,9 @@
 				"DamageTypeTooltip" "DAMAGE_TYPE_MAGICAL"
 				"CalculateDamageTooltip" "1"
 			}
-			"building_damage" "5 10 15 20"
+			// "building_damage" "5 10 15 20"
 			"duration" "5 7 9 11"
 			"required_stacks" "7 6 5 4"
 		}
 	}
-}	
+}
