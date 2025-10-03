@@ -6,6 +6,19 @@ end
 
 function lion_mana_sacrifice:OnSpellStart()
     local target = self:GetCursorTarget()
+    local caster = self:GetCaster()
+
+    if target == caster then
+        target:AddNewModifier(
+            self:GetCaster(),
+            self,
+            "modifier_mana_sacrifice",
+            {
+                duration = self:GetSpecialValueFor("duration")
+            }
+        )
+        return
+    end
 
     local projectile_name = "particles/units/heroes/hero_necrolyte/necrolyte_pulse_friend.vpcf"
     local projectile_speed = self:GetSpecialValueFor("projectile_speed")
@@ -13,7 +26,7 @@ function lion_mana_sacrifice:OnSpellStart()
 
     local projectile_data = {
         Target = target,
-        Source = self:GetCaster(),
+        Source = caster,
         EffectName = projectile_name,
         iMoveSpeed = projectile_speed,
         bProvidesVision = true,
@@ -21,7 +34,7 @@ function lion_mana_sacrifice:OnSpellStart()
         bVisibleToEnemies = true,
         bDodgeable = false,
         iSourceAttachment = DOTA_PROJECTILE_ATTACHMENT_ATTACK_1,
-        iVisionTeamNumber = self:GetCaster():GetTeamNumber(),
+        iVisionTeamNumber = caster:GetTeamNumber(),
         Ability = self
     }
 
