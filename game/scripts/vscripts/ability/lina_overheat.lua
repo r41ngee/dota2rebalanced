@@ -1,7 +1,7 @@
 lina_overheat_nw = class({})
 
 modifier_lina_overheat_nw = class({})
-function modifier_lina_overheat_nw:IsHidden() return false end
+function modifier_lina_overheat_nw:IsHidden() return true end
 function modifier_lina_overheat_nw:IsPurgable() return false end
 function modifier_lina_overheat_nw:IsDebuff() return false end
 
@@ -23,6 +23,7 @@ function modifier_lina_overheat_nw:OnAttackLanded(event)
 
     local parent = self:GetParent()
     local ability = self:GetAbility()
+
     if parent:PassivesDisabled() then return end
 
     if parent ~= event.attacker then return end
