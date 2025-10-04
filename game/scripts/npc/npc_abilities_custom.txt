@@ -17,6 +17,7 @@
 #base "abilities/ancient_apparition.txt"
 #base "abilities/skywrath.txt"
 #base "abilities/nevermore.txt"
+#base "abilities/weaver.txt"
 
 // 9.00c
 #base "abilities/bane.txt"
