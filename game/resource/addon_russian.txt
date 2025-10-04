@@ -25,9 +25,13 @@
 		"DOTA_Tooltip_Ability_lina_overheat_nw_shard_description" "Делает способность активной. При активации способность наносит урон постройкам в течении %building_damage_duration% сек."
 		"DOTA_Tooltip_Ability_lina_overheat_nw_required_stacks"							"НЕОБХОДИМОЕ КОЛИЧЕСТВО ЭФФЕКТОВ:"
         "DOTA_Tooltip_Ability_lina_overheat_nw_Lore" "Руки волшебницы настолько горячи, что вызывают тепловой удар у врагов."
+		"DOTA_Tooltip_Ability_lina_overheat_nw_Note0" "Эффекты имеют общую обновляемую длительность."
 
         "DOTA_Tooltip_modifier_lina_overheat_nw_stack" "Перегрев"
-        "DOTA_Tooltip_modifier_lina_overheat_mark_nw_Description" "Существо подвержено Overheat"
+        "DOTA_Tooltip_modifier_lina_overheat_nw_stack_Description" "Существо подвержено Overheat"
+
+		"DOTA_Tooltip_modifier_lina_overheat_nw_building" "Усиление Overheat"
+		"DOTA_Tooltip_modifier_lina_overheat_nw_building_Description" "Наносит урон постройкам."
 
 		"DOTA_Tooltip_ability_special_bonus_unique_lina_7" "+{s:bonus_damage}% к урону Overheat"
 
