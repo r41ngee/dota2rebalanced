@@ -28,6 +28,8 @@
 		"SpellDispellableType" "SPELL_DISPELLABLE_YES"
 		"MaxLevel"              "4"
 
+		"HasShardUpgrade" "1"
+
 		"AbilityValues"
 		{
 			"damage" 
@@ -37,9 +39,56 @@
 				"DamageTypeTooltip" "DAMAGE_TYPE_MAGICAL"
 				"CalculateDamageTooltip" "1"
 			}
-			// "building_damage" "5 10 15 20"
+
+			"AbilityCooldown"
+			{
+				"value" "0"
+				"special_bonus_shard" "65"
+			}
+
+			"building_damage_duration"
+			{
+				"value" "0"
+				"special_bonus_shard" "7"
+			}
+			"building_damage"
+			{
+				"value" "0"
+				"special_bonus_shard" "20"
+			}
+
 			"duration" "8"
 			"required_stacks" "7 6 5 4"
+		}
+	}
+
+	"lina_flame_cloak"
+	{
+		"AbilityValues"
+		{
+			"flame_cloak_duration"				"6"
+			"magic_resistance"					"20"
+			"spell_amp"							"20"
+			"visualzdelta"							"100"
+			"zchangespeed"							"350"					
+		}
+	}
+
+	"lina_laguna_blade"
+	{
+		"HasShardUpgrade" "0"
+		"AbilityValues"
+		{
+			"barrier_pct"
+			{
+				"value"						"0"
+				"special_bonus_shard"		"0"
+			}
+			"barrier_duration"
+			{
+				"value"						"0"
+				"special_bonus_shard"		"0"
+			}
 		}
 	}
 }

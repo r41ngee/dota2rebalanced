@@ -22,6 +22,7 @@
 		"DOTA_Tooltip_Ability_lina_overheat_nw_Description"								"Атаки накладывают складывающуюся метку. Когда метка достигает указанного значения, следующая атака по цели нанесет дополнительный урон. Метка длится %duration% сек."
 		"DOTA_Tooltip_ability_lina_overheat_nw_damage"								"УРОН:"
         "DOTA_Tooltip_ability_lina_overheat_nw_building_damage" "%УРОН ПО ПОСТРОЙКАМ: "
+		"DOTA_Tooltip_Ability_lina_overheat_nw_shard_description" "Делает способность активной. При активации способность наносит урон постройкам в течении %building_damage_duration% сек."
 		"DOTA_Tooltip_Ability_lina_overheat_nw_required_stacks"							"НЕОБХОДИМОЕ КОЛИЧЕСТВО ЭФФЕКТОВ:"
         "DOTA_Tooltip_Ability_lina_overheat_nw_Lore" "Руки волшебницы настолько горячи, что вызывают тепловой удар у врагов."
 
