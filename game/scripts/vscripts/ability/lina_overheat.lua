@@ -80,6 +80,7 @@ function modifier_lina_overheat_nw:OnAttackLanded(event)
             mark_modifier:Destroy()
         else
             mark_modifier:IncrementStackCount()
+            mark_modifier:SetDuration(ability:GetSpecialValueFor("duration"), true)
         end
     else
         local new_modifier = victim:AddNewModifier(parent, ability, "modifier_lina_overheat_nw_stack", {
