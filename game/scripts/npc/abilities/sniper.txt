@@ -1,0 +1,22 @@
+"DOTAAbilities"
+{
+    "sniper_accurate_shooting"
+    {
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "BaseClass" "ability_lua"
+        "ScriptFile" "ability/sniper_accurate_shooting.lua"
+        "DependentOnAbility" "sniper_assassinate"
+        "Innate" "1"
+
+        "AbilityTextureName" "sniper_accurate_shooting"
+
+        "AbilityValues"
+        {
+            "range_per_stack" "5 10 15 20"
+            "max_stacks" "9 10 11 12"
+            "stack_regen_time" "3"
+
+            "AbilityCooldown" "7"
+        }
+    }
+}

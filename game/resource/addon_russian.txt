@@ -135,5 +135,9 @@
 
 		"DOTA_Tooltip_modifier_mana_sacrifice" "Mana Sacrifice"
 		"DOTA_Tooltip_modifier_mana_sacrifice_Description" "Восстанавливает здоровье, жертвуя своей маной."
+
+		// SNIPER
+		"DOTA_Tooltip_ability_sniper_accurate_shooting" "Holding a Position"
+		"DOTA_Tooltip_modifier_sniper_accurate_shooting_Description" "Увеличивает дальность атаки на %dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%"
     }
 }

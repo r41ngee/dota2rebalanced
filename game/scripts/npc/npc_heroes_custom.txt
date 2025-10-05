@@ -123,4 +123,9 @@
 		"Ability4" "lion_mana_sacrifice"
 		"Ability5" "lion_to_hell_and_back"
 	}
+
+	"npc_dota_hero_sniper"
+	{
+		"Ability5" "sniper_accurate_shooting"
+	}
 }

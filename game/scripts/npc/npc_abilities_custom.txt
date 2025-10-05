@@ -27,6 +27,8 @@
 
 #base "abilities/lion.txt"
 
+#base "abilities/sniper.txt"
+
 "DOTAAbilities"
 {
 	// ability_datadriven example
