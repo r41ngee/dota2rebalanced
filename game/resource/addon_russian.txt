@@ -137,6 +137,8 @@
 		"DOTA_Tooltip_modifier_mana_sacrifice_Description" "Восстанавливает здоровье, жертвуя своей маной."
 
 		// WEAVER
+		"DOTA_Tooltip_ability_weaver_shukuchi_shard_Description"			"Накладывает метку на врагов, которым эта способность нанесла урон. Спустя %shukuchi_attack_delay% сек. после выхода из невидимости от Shukuchi герой направит в отмеченных врагов в радиусе %shukuchi_attack_mark_radius% дополнительную атаку от Geminate Attack. "
+
 		"DOTA_Tooltip_ability_weaver_damage_range" "Rewoven"
 		"DOTA_Tooltip_ability_weaver_damage_range_Description" "Увеличивает дальность атаки на %bonus_range_pct%%% от базового урона."
 
