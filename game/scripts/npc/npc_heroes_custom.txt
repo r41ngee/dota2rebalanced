@@ -123,4 +123,9 @@
 		"Ability4" "lion_mana_sacrifice"
 		"Ability5" "lion_to_hell_and_back"
 	}
+
+	"npc_dota_hero_weaver"
+	{
+		"Ability7" "weaver_damage_range"
+	}
 }
