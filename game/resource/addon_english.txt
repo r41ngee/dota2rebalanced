@@ -122,5 +122,12 @@
 
 		"DOTA_Tooltip_modifier_mana_sacrifice" "Mana Sacrifice"
 		"DOTA_Tooltip_modifier_mana_sacrifice_Description" "Restores health, sacrificing mana."
+
+		// WEAVER
+		"DOTA_Tooltip_ability_weaver_damage_range" "Rewoven"
+		"DOTA_Tooltip_ability_weaver_damage_range_Description" "Increases attack range by %bonus_range_pct%%% of base damage."
+
+		"DOTA_Tooltip_modifier_weaver_damage_range" "Rewoven"
+		"DOTA_Tooltip_modifier_weaver_damage_range_Description" "Attack range increased by %dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%."
 	}
 }
