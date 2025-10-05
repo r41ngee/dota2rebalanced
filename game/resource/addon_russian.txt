@@ -139,5 +139,8 @@
 		// WEAVER
 		"DOTA_Tooltip_ability_weaver_damage_range" "Rewoven"
 		"DOTA_Tooltip_ability_weaver_damage_range_Description" "Увеличивает дальность атаки на %bonus_range_pct%%% от базового урона."
+
+		"DOTA_Tooltip_modifier_weaver_damage_range" "Rewoven"
+		"DOTA_Tooltip_modifier_weaver_damage_range_Description" "Дальность атаки увеличена на %dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%."
     }
 }
