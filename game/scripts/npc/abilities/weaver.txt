@@ -8,8 +8,6 @@
         "DependentOnAbility" "weaver_time_lapse"
         "Innate" "1"
         "MaxLevel" "4"
-        
-        "AbilityTextureName" "weaver_the_swarm"
 
         "AbilityValues"
         {
