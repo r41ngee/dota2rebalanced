@@ -124,6 +124,8 @@
 		"DOTA_Tooltip_modifier_mana_sacrifice_Description" "Restores health, sacrificing mana."
 
 		// WEAVER
+		"DOTA_Tooltip_ability_weaver_shukuchi_shard_Description"			"Shukuchi puts a mark on enemies it damage. %shukuchi_attack_delay%s after Weaver exits Shukuchi, enemies with a mark within %shukuchi_attack_mark_radius% range will also be attacked with a secondary Geminate attack "
+
 		"DOTA_Tooltip_ability_weaver_damage_range" "Rewoven"
 		"DOTA_Tooltip_ability_weaver_damage_range_Description" "Increases attack range by %bonus_range_pct%%% of base damage."
 
