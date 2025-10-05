@@ -32,24 +32,17 @@ function modifier_sniper_accurate_shooting:DeclareFunctions()
 end
 
 function modifier_sniper_accurate_shooting:GetModifierAttackRangeBonus()
-
     local ability = self:GetAbility()
     local parent = self:GetParent()
-    print("point 1")
-    if parent:FindModifierByName("modifier_sniper_accurate_shooting_cd") or self:GetStackCount() <= 0 then
-        print("point 2")
+
+    if parent:HasModifier("modifier_sniper_accurate_shooting_cd") or self:GetStackCount() <= 0 then
         return 0
     else
-        print("point 3")
         local per_stack = ability:GetSpecialValueFor("range_per_stack")
-        print("per_stack", per_stack)
         local stacks = self:GetStackCount()
-        print("stacks", stacks)
-        local result = per_stack * stacks
-        print("result", result)
-        return tonumber(result)
+
+        return per_stack * stacks
     end
-    return 100
 end
 
 function modifier_sniper_accurate_shooting:OnTakeDamage(event)
@@ -62,7 +55,7 @@ function modifier_sniper_accurate_shooting:OnTakeDamage(event)
     local cooldown = ability:GetSpecialValueFor("AbilityCooldown")
     ability:StartCooldown(cooldown)
 
-    
+   
     parent:AddNewModifier(
         parent,
         ability,
