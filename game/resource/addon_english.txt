@@ -122,5 +122,19 @@
 
 		"DOTA_Tooltip_modifier_mana_sacrifice" "Mana Sacrifice"
 		"DOTA_Tooltip_modifier_mana_sacrifice_Description" "Restores health, sacrificing mana."
+
+		// SNIPER
+		"DOTA_Tooltip_ability_sniper_accurate_shooting" "Holding a Position"
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_Description" "The ability owner receives a stacking effect that receives a new charge every %stack_regen_time% seconds. Each charge gives you an additional range of attack. The ability will disable and reset charges when the owner of the ability takes damage."
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_Note0" "Ability cooldown cannot be refreshed."
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_range_per_stack" "ATTACK RANGE PER EFFECT:"
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_max_stacks" "MAX. NUMBER OF EFFECTS:"
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_stack_regen_time" "EFFECT RECHARGE TIME:"
+
+		"DOTA_Tooltip_Facet_sniper_ghillie_suit_Description"	"While Take Aim is active, Sniper's attacks do not reveal him from fog of war. Increases attack range from Holding a Position."
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_Facet_sniper_ghillie_suit" "Increases the attack range per effect."
+
+		"DOTA_Tooltip_modifier_sniper_accurate_shooting" "Holding a Position"
+		"DOTA_Tooltip_modifier_sniper_accurate_shooting_Description" "Increases the attack range by %dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%"
 	}
 }
