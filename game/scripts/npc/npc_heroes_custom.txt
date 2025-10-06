@@ -127,5 +127,6 @@
 	"npc_dota_hero_sniper"
 	{
 		"Ability5" "sniper_accurate_shooting"
+		"Ability16" "special_bonus_unique_sniper_global_shrapnel"
 	}
 }
