@@ -14,13 +14,13 @@
         {
             "range_per_stack"
             {
-                "value" "5 10 15 20"
+                "value" "10 15 20 25"
                 "special_bonus_facet_sniper_ghillie_suit" "+5"
             }
-            "max_stacks" "9 10 11 12"
+            "max_stacks" "10"
             "stack_regen_time" "3"
 
-            "AbilityCooldown" "7"
+            "AbilityCooldown" "8 7 6 5"
         }
     }
 }
