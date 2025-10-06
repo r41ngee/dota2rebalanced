@@ -67,7 +67,7 @@ function modifier_sniper_accurate_shooting:OnTakeDamage(event)
 end
 
 modifier_sniper_accurate_shooting_cd = class({})
-function modifier_sniper_accurate_shooting_cd:IsHidden() return false end
+function modifier_sniper_accurate_shooting_cd:IsHidden() return true end
 function modifier_sniper_accurate_shooting_cd:IsPurgable() return false end
 function modifier_sniper_accurate_shooting_cd:IsDebuff() return true end
 
