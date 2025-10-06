@@ -1,5 +1,9 @@
 sniper_accurate_shooting = class({})
 
+function sniper_accurate_shooting:IsRefreshable()
+    return false
+end
+
 function sniper_accurate_shooting:GetIntrinsicModifierName()
     return "modifier_sniper_accurate_shooting"
 end
