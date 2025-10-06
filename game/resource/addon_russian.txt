@@ -138,6 +138,16 @@
 
 		// SNIPER
 		"DOTA_Tooltip_ability_sniper_accurate_shooting" "Holding a Position"
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_Description" "Владелец способности получает складываемый эффект, получающий новый заряд каждые %stack_regen_time% сек. Каждый заряд даёт дополнительную дальность атаки. \n Способность отключится и сбросит заряды, когда владелец способности получит урон."
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_Note0" "Перезарядку способности нельзя откатить."
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_range_per_stack" "ДОП. ДАЛЬНОСТЬ АТАКИ ЗА ЭФФЕКТ:"
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_max_stacks" "МАКС. КОЛИЧЕСТВО ЭФФЕКТОВ:"
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_stack_regen_time" "ВРЕМЯ ВОССТАНОВЛЕНИЯ ЭФФЕКТА:"
+
+		"DOTA_Tooltip_Facet_sniper_ghillie_suit_Description"						"Атакуя под действием способности Take Aim, герой не становится виден в тумане войны. Увеличивает дальность атаки от Holding a Position."
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_Facet_sniper_ghillie_suit" "Увеличивает дальность атаки за эффект."
+
+		"DOTA_Tooltip_modifier_sniper_accurate_shooting" "Holding a Position"
 		"DOTA_Tooltip_modifier_sniper_accurate_shooting_Description" "Увеличивает дальность атаки на %dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%"
     }
 }
