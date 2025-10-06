@@ -145,5 +145,7 @@
 
 		"DOTA_Tooltip_modifier_sniper_accurate_shooting" "Holding a Position"
 		"DOTA_Tooltip_modifier_sniper_accurate_shooting_Description" "Increases the attack range by %dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%"
+
+		"DOTA_Tooltip_ability_special_bonus_unique_sniper_global_shrapnel" "Shrapnel с неогр. дальностью применения"
 	}
 }
