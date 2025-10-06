@@ -128,4 +128,9 @@
 	{
 		"Ability7" "weaver_damage_range"
 	}
+	
+	"npc_dota_hero_sniper"
+	{
+		"Ability5" "sniper_accurate_shooting"
+	}
 }

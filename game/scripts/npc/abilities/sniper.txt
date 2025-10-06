@@ -1,0 +1,26 @@
+"DOTAAbilities"
+{
+    "sniper_accurate_shooting"
+    {
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "BaseClass" "ability_lua"
+        "ScriptFile" "ability/sniper_accurate_shooting.lua"
+        "DependentOnAbility" "sniper_assassinate"
+        "Innate" "1"
+
+        "AbilityTextureName" "sniper_accurate_shooting"
+
+        "AbilityValues"
+        {
+            "range_per_stack"
+            {
+                "value" "10 15 20 25"
+                "special_bonus_facet_sniper_ghillie_suit" "+5"
+            }
+            "max_stacks" "10"
+            "stack_regen_time" "3"
+
+            "AbilityCooldown" "8 7 6 5"
+        }
+    }
+}
