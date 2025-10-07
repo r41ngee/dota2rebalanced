@@ -28,7 +28,10 @@
 
 #base "abilities/lion.txt"
 
+// 9.01
 #base "abilities/sniper.txt"
+#base "abilities/death_prophet.txt"
+
 
 "DOTAAbilities"
 {

@@ -134,4 +134,9 @@
 		"Ability5" "sniper_accurate_shooting"
 		"Ability16" "special_bonus_unique_sniper_global_shrapnel"
 	}
+
+	"npc_dota_hero_death_prophet"
+	{
+		"Ability2" "death_prophet_mystical_force"
+	}
 }

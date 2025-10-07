@@ -1,0 +1,36 @@
+"DOTAAbilities"
+{
+    "death_prophet_mystical_force"
+    {
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+        "AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "BaseClass" "ability_lua"
+        "ScriptFile" "ability/death_prophet_mystical_force.lua"
+
+		"SpellImmunityType" "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType" "SPELL_DISPELLABLE_YES"
+        "AbilityTextureName" "death_prophet_silence"
+
+        "AbilityCooldown" "15 14 13 12"
+        "AbilityManaCost" "80 90 100 110"
+
+        "AbilityCastPoint" "0.25"
+        "AbilityCastRange" "600"
+
+        "AbilityUnitDamageType" "DAMAGE_TYPE_MAGICAL"
+
+        "AbilityValues"
+        {
+            "radius"
+            {
+                "value" "350 400 450 500"
+                "affected_by_aoe_increase" "true"
+            }
+
+            "damage" "75 150 225 300"
+
+            "duration" "3"
+        }
+    }
+}
