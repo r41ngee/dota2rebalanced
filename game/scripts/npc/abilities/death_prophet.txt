@@ -16,7 +16,7 @@
         "AbilityManaCost" "80 90 100 110"
 
         "AbilityCastPoint" "0.25"
-        "AbilityCastRange" "600"
+        "AbilityCastRange" "775"
 
         "AbilityUnitDamageType" "DAMAGE_TYPE_MAGICAL"
 
