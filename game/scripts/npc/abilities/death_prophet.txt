@@ -24,13 +24,12 @@
         {
             "radius"
             {
-                "value" "350 400 450 500"
+                "value" "300 350 400 450"
                 "affected_by_aoe_increase" "true"
             }
-
             "damage" "75 150 225 300"
-
-            "duration" "3"
+            "duration" "2 2.33 2.66 3"
+            "kills_illusions" "1"
         }
     }
 }

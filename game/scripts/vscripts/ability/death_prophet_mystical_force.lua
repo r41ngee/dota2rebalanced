@@ -10,29 +10,9 @@ function death_prophet_mystical_force:OnSpellStart()
     local caster = self:GetCaster()
     local target = self:GetCursorTarget()
 
-    print(caster:GetAbsOrigin())
-    print(target:GetAbsOrigin())
-
-    local projectile_name = "particles/neutral_fx/dark_troll_ensnare_proj.vpcf"
+    local projectile_name = "particles/units/heroes/hero_siren/siren_net_projectile.vpcf"
     local projectile_speed = 1500
 
-    ProjectileManager:CreateTrackingProjectile(
-        {
-            EffectName = projectile_name,
-            Ability = self,
-            Source = caster,
-            bProvidesVision = false,
-            Target = target,
-            iMoveSpeed = projectile_speed,
-            bDodgeable = false
-        }
-    )
-end
-
-function death_prophet_mystical_force:OnProjectileHit(target, location)
-    if not IsServer() then return end
-
-    local caster = self:GetCaster()
     local secondary = FindUnitsInRadius(
         target:GetTeamNumber(),
         target:GetAbsOrigin(),
@@ -45,24 +25,43 @@ function death_prophet_mystical_force:OnProjectileHit(target, location)
         false
     )
 
-    for _,i in ipairs(secondary) do
-        i:AddNewModifier(
-            caster,
-            self,
-            "modifier_mystical_force_root",
+    for _, i in ipairs(secondary) do
+        ProjectileManager:CreateTrackingProjectile(
             {
-                duration = self:GetSpecialValueFor("duration")
+                EffectName = projectile_name,
+                Ability = self,
+                Source = caster,
+                bProvidesVision = false,
+                Target = i,
+                iMoveSpeed = projectile_speed,
+                bDodgeable = false
             }
         )
-
-        ApplyDamage({
-            victim = i,
-            attacker = caster,
-            damage = self:GetSpecialValueFor("damage"),
-            damage_type = self:GetAbilityDamageType(),
-            ability = self
-        })
     end
+end
+
+function death_prophet_mystical_force:OnProjectileHit(target, location)
+    if not IsServer() then return end
+    
+    local i = target
+    local caster = self:GetCaster()
+
+    i:AddNewModifier(
+        caster,
+        self,
+        "modifier_mystical_force_root",
+        {
+            duration = self:GetSpecialValueFor("duration")
+        }
+    )
+
+    ApplyDamage({
+        victim = i,
+        attacker = caster,
+        damage = self:GetSpecialValueFor("damage"),
+        damage_type = self:GetAbilityDamageType(),
+        ability = self
+    })
 end
 
 modifier_mystical_force_root = class({})
@@ -82,7 +81,7 @@ function modifier_mystical_force_root:GetEffectAttachType()
 end
 
 function modifier_mystical_force_root:GetEffectName()
-    return "particles/neutral_fx/dark_troll_ensnare.vpcf"
+    return "particles/units/heroes/hero_siren/siren_net.vpcf"
 end
 
 function modifier_mystical_force_root:GetPriority() return 3 end
