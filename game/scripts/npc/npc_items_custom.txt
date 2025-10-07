@@ -130,4 +130,12 @@
 			"bonus_damage"		"33"
 		}
 	}
+
+	"item_sange_and_yasha"
+	{
+		"AbilityValues" 
+		{
+			"status_resistance" "21"
+		}
+	}
 }
