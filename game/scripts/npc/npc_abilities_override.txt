@@ -429,4 +429,6 @@
   //"item_witless_shako"            "REMOVE" // disabled
   //"item_wizard_glass"             "REMOVE" // unreleased
   //"item_woodland_striders"        "REMOVE" // disabled
+
+  "item_example_item" "REMOVE"
 }
