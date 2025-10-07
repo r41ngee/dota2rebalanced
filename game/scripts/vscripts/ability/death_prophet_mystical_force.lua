@@ -40,11 +40,14 @@ function death_prophet_mystical_force:OnSpellStart()
     end
 end
 
-function death_prophet_mystical_force:OnProjectileHit(target, location)
+function death_prophet_mystical_force:OnProjectileHit(i, location)
     if not IsServer() then return end
     
-    local i = target
     local caster = self:GetCaster()
+
+    if i:IsIllusion() then
+        i:Kill(self, caster)
+    end
 
     i:AddNewModifier(
         caster,
