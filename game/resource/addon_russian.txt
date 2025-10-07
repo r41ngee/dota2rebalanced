@@ -26,6 +26,7 @@
 		"DOTA_Tooltip_Ability_lina_overheat_nw_required_stacks"							"НЕОБХОДИМОЕ КОЛИЧЕСТВО ЭФФЕКТОВ:"
         "DOTA_Tooltip_Ability_lina_overheat_nw_Lore" "Руки волшебницы настолько горячи, что вызывают тепловой удар у врагов."
 		"DOTA_Tooltip_Ability_lina_overheat_nw_Note0" "Эффекты имеют общую обновляемую длительность."
+		"DOTA_Tooltip_Ability_lina_overheat_nw_Note1" "Эффект Aghanim's Shard нельзя развеять."
 
         "DOTA_Tooltip_modifier_lina_overheat_nw_stack" "Перегрев"
         "DOTA_Tooltip_modifier_lina_overheat_nw_stack_Description" "Существо подвержено Overheat"
