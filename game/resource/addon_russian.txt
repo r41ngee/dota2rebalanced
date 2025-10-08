@@ -169,5 +169,6 @@
 		"DOTA_Tooltip_ability_death_prophet_mystical_force_duration" "ДЛИТЕЛЬНОСТЬ ОЦЕПЕНЕНИЯ:"
 		"DOTA_Tooltip_ability_death_prophet_mystical_force_Note0" "Снаряд нельзя сбить с цели."
 		"DOTA_Tooltip_ability_death_prophet_mystical_force_Note1" "Мгновенно уничтожает иллюзии."
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_Note2" "Даёт обзор по цели."
     }
 }

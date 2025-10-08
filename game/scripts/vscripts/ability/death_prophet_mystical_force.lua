@@ -31,7 +31,9 @@ function death_prophet_mystical_force:OnSpellStart()
                 EffectName = projectile_name,
                 Ability = self,
                 Source = caster,
-                bProvidesVision = false,
+                bProvidesVision = true,
+                iVisionRadius = 300,
+                iVisionTeamNumber = caster:GetTeamNumber(),
                 Target = i,
                 iMoveSpeed = projectile_speed,
                 bDodgeable = false
@@ -68,6 +70,20 @@ function death_prophet_mystical_force:OnProjectileHit(i, location)
 end
 
 modifier_mystical_force_root = class({})
+function modifier_mystical_force_root:OnCreated()
+    if not IsServer() then return end
+
+    local parent = self:GetParent()
+    parent:MakeVisibleToTeam(self:GetCaster():GetTeamNumber(), 0.12)
+    self:StartIntervalThink(0.1)
+end
+function modifier_mystical_force_root:OnIntervalThink()
+    if not IsServer() then return end
+    
+    local parent = self:GetParent()
+    parent:MakeVisibleToTeam(self:GetCaster():GetTeamNumber(), 0.12)
+end
+
 function modifier_mystical_force_root:IsHidden()
     return false
 end
@@ -75,7 +91,8 @@ function modifier_mystical_force_root:IsDebuff() return true end
 
 function modifier_mystical_force_root:CheckState()
     return {
-        [MODIFIER_STATE_ROOTED] = true
+        [MODIFIER_STATE_ROOTED] = true,
+        -- [MODIFIER_STATE_PROVIDES_VISION] = true
     }
 end
 
