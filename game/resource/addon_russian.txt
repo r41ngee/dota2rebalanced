@@ -162,7 +162,7 @@
 		"DOTA_Tooltip_ability_special_bonus_unique_sniper_global_shrapnel" "Shrapnel с неогр. дальностью применения"
 
 		// DEATH PROPHET DP
-		"DOTA_Tooltip_ability_death_prophet_mystical_force" "Mystical Force"
+		"DOTA_Tooltip_ability_death_prophet_mystical_force" "Extraordinary Force"
 		"DOTA_Tooltip_ability_death_prophet_mystical_force_Description" "Герой запускает снаряды в цель способности и его союзников вокруг, привязывающий их к земле и наносящий урон."
 		"DOTA_Tooltip_ability_death_prophet_mystical_force_radius" "РАДИУС:"
 		"DOTA_Tooltip_ability_death_prophet_mystical_force_damage" "УРОН:"
