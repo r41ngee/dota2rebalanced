@@ -147,5 +147,17 @@
 		"DOTA_Tooltip_modifier_sniper_accurate_shooting_Description" "Increases the attack range by %dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%"
 
 		"DOTA_Tooltip_ability_special_bonus_unique_sniper_global_shrapnel" "Shrapnel с неогр. дальностью применения"
+		
+		// DEATH PROPHET DP
+		"DOTA_Tooltip_ability_death_prophet_mystical_force" "Extraordinary Force"
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_Description" "The hero launches projectiles at the target of the ability and its allies around, tying them to the ground and dealing damage."
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_radius" "RADIUS:"
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_damage" "DAMAGE:"
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_duration" "ROOT DURATION:"
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_Note0" "The projectile cannot be dodged."
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_Note1" "Instantly destroys illusions."
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_Note2" "Provides vision on target."
+
+		"DOTA_Tooltip_ability_special_bonus_unique_death_prophet_mystical_force_damage" "+{s:bonus_damage} Extraordinary Force damage"
 	}
 }
