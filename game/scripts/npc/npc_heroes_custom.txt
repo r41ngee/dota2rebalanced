@@ -138,5 +138,6 @@
 	"npc_dota_hero_death_prophet"
 	{
 		"Ability2" "death_prophet_mystical_force"
+		"Ability12" "special_bonus_unique_death_prophet_mystical_force_damage"
 	}
 }

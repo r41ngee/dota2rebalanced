@@ -27,9 +27,20 @@
                 "value" "225 275 325 375"
                 "affected_by_aoe_increase" "true"
             }
-            "damage" "75 150 225 300"
+            "damage"
+            {
+                "value" "75 150 225 300"
+                "special_bonus_unique_death_prophet_mystical_force_damage" "+75"
+            }
             "duration" "2 2.33 2.66 3"
             "kills_illusions" "1"
         }
+    }
+
+    "special_bonus_unique_death_prophet_mystical_force_damage"
+    {
+        "AbilityType"					"ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"special_bonus_base"
     }
 }
