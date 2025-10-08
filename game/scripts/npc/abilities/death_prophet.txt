@@ -24,7 +24,7 @@
         {
             "radius"
             {
-                "value" "300 350 400 450"
+                "value" "225 275 325 375"
                 "affected_by_aoe_increase" "true"
             }
             "damage" "75 150 225 300"
