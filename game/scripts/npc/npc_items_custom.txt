@@ -138,4 +138,67 @@
 			"status_resistance" "21"
 		}
 	}
+
+	"item_shamelis"
+	{
+		"BaseClass"           		"item_lua"
+		"AbilityBehavior"       	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"		"item_example_item"
+
+		"ScriptFile" "items/shamelis"
+		
+        "ItemQuality"                   "epic"
+        "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH"
+        "SuggestLategame"               "1"
+
+		"AbilityValues"
+		{
+			"bonus_damage" "56"
+			"bonus_health" "275"
+			"bonus_mana_regen" "3.5"
+
+			"crit_chance_pct" "30"
+			"crit_damage_pct" "210"
+		}
+	}
+
+	"item_recipe_shamelis"
+	{
+		"BaseClass" "item_datadriven"
+		"AbilityTextureName" "item_recipe"
+		"ItemCost" "575"
+		"ItemRecipe" "1"
+		"ItemResult" "item_shamelis"
+		"ItemRequirements"
+		{
+			"01" "item_lesser_crit;item_falcon_blade"
+		}
+	}
+
+    // "item_custom_crit_sange"
+    // {
+    //     "ID" "10001"
+    //     "ItemCost" "4000"
+    //     "ItemRecipe" "0" // ⚠️ Это НЕ рецепт, а готовый предмет!
+    //     "AbilityTextureName" "custom_crit_sange_icon"
+        
+    //     // Способности предмета
+    // }
+
+    // // 2. РЕЦЕПТ для сборки этого предмета
+    // "item_recipe_custom_crit_sange"  // ⚠️ Отдельное имя для рецепта!
+    // {
+    //     "ID" "10002"
+    //     "ItemCost" "0" // Стоимость самого рецепта (обычно 0 или небольшая)
+    //     "ItemRecipe" "1" // ⚠️ Это РЕЦЕПТ!
+    //     "ItemResult" "item_custom_crit_sange" // ⚠️ Какой предмет получаем
+        
+    //     "ItemRequirements"
+    //     {
+    //         "01" "item_lesser_crit; item_sange"
+    //     }
+        
+    //     // Иконка рецепта (обычно стандартная)
+    //     "AbilityTextureName" "item_recipe"
+    // }
 }
