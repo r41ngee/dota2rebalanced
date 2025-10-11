@@ -17,6 +17,11 @@
 		"DOTA_BadGuys"    								                        "Силы Тьмы"
 
 
+		// ORIGINAL FIX
+		"DOTA_Tooltip_ability_troll_warlord_berserkers_rage_Note0"				""
+		"DOTA_Tooltip_ability_troll_warlord_switch_stance_Note0"				"Перезарядка некоторых предметов зависит от того, какой тип атаки герой имел при их использовании."		
+
+
         // Lina Overheat
 		"DOTA_Tooltip_Ability_lina_overheat_nw"									"Overheat"
 		"DOTA_Tooltip_Ability_lina_overheat_nw_Description"								"Атаки накладывают складывающуюся метку. Когда метка достигает указанного значения, следующая атака по цели нанесет дополнительный урон. Метка длится %duration% сек."
