@@ -144,7 +144,7 @@
 		"BaseClass"           		"item_lua"
 		"AbilityBehavior"       	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"SpellDispellableType" 		"SPELL_DISPELLABLE_NO"
-		"AbilityTextureName"		"item_example_item"
+		"AbilityTextureName"		"item_shemelis"
 
 		"ScriptFile" "items/shamelis"
 		
