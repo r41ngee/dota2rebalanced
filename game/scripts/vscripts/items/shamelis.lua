@@ -7,6 +7,10 @@ function item_shamelis:OnSpellStart()
     local target = self:GetCursorTarget()
     local caster = self:GetCaster()
 
+    if target:TriggerSpellAbsorb(self) or target:TriggerSpellReflect(self) then
+        return
+    end
+
     target:AddNewModifier(
         caster,
         self,
