@@ -18,7 +18,8 @@ function modifier_item_shamelis:DeclareFunctions()
         MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT,
         MODIFIER_PROPERTY_MANA_REGEN_CONSTANT,
 
-        MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE
+        MODIFIER_PROPERTY_PREATTACK_CRITICALSTRIKE,
+        MODIFIER_EVENT_ON_ATTACK_LANDED
     }
 end
 
@@ -43,18 +44,33 @@ function modifier_item_shamelis:GetModifierConstantManaRegen() return self:GetAb
 
 function modifier_item_shamelis:GetModifierPreAttack_CriticalStrike(event)
     local attacker = event.attacker
-    if attacker ~= self:GetParent() then
-        return
-    end
-    local target = event.target
-
+    if attacker ~= self:GetParent() then return end
+    
     local ability = self:GetAbility()
+    local target = event.target
+    
+    if attacker:GetTeamNumber() == target:GetTeamNumber() then return end
 
-    if attacker:GetTeamNumber() == target:GetTeamNumber() then
-        return
+    self.last_attack_target = target
+    self.last_attack_crit = RandomInt(0, 100) < ability:GetSpecialValueFor("crit_chance_pct")
+    
+    if self.last_attack_crit then
+        return ability:GetSpecialValueFor("crit_damage_pct")
     end
+end
 
-    if RandomInt(0, 100) < ability:GetSpecialValueFor("crit_chance_pct") then
+function modifier_item_shamelis:OnAttackLanded(event)
+    if not IsServer() then return end
+    
+    local attacker = event.attacker
+    local target = event.target
+    
+    if attacker ~= self:GetParent() then return end
+    if attacker:GetTeamNumber() == target:GetTeamNumber() then return end
+    
+    if target == self.last_attack_target and self.last_attack_crit then
+        local ability = self:GetAbility()
+        
         target:AddNewModifier(
             attacker,
             ability,
@@ -63,15 +79,37 @@ function modifier_item_shamelis:GetModifierPreAttack_CriticalStrike(event)
                 duration = ability:GetSpecialValueFor("crit_bash_duration")
             }
         )
-        return ability:GetSpecialValueFor("crit_damage_pct")
     end
+    
+    -- Сбрасываем
+    self.last_attack_target = nil
+    self.last_attack_crit = false
 end
 
 modifier_item_shamelis_bash = class({})
+
+function modifier_item_shamelis_bash:IsHidden() return false end
+function modifier_item_shamelis_bash:IsDebuff() return true end
+function modifier_item_shamelis_bash:IsPurgable() return true end
+
 function modifier_item_shamelis_bash:CheckState()
     return {
         [MODIFIER_STATE_STUNNED] = true
     }
+end
+
+function modifier_item_shamelis_bash:GetEffectName()
+    return "particles/generic_gameplay/generic_stunned.vpcf"
+end
+
+function modifier_item_shamelis_bash:GetEffectAttachType()
+    return PATTACH_OVERHEAD_FOLLOW
+end
+
+function modifier_item_shamelis_bash:OnCreated()
+    if IsServer() then
+        EmitSoundOn("DOTA_Item.AbyssalBlade.Target", self:GetParent())
+    end
 end
 
 LinkLuaModifier("modifier_item_shamelis", "items/shamelis.lua", LUA_MODIFIER_MOTION_NONE)
