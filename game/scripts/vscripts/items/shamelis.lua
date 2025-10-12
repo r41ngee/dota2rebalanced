@@ -41,6 +41,9 @@ function modifier_item_shamelis:GetModifierConstantHealthRegen()
 end
 function modifier_item_shamelis:GetModifierConstantManaRegen() return self:GetAbility():GetSpecialValueFor("bonus_manaregen") end
 
+function modifier_item_shamelis:OnCreated()
+    self.prd_attack_counter = 0
+end
 
 function modifier_item_shamelis:GetModifierPreAttack_CriticalStrike(event)
     local attacker = event.attacker
@@ -52,10 +55,12 @@ function modifier_item_shamelis:GetModifierPreAttack_CriticalStrike(event)
     if attacker:GetTeamNumber() == target:GetTeamNumber() then return end
 
     self.last_attack_target = target
-    self.last_attack_crit = RandomInt(0, 100) < ability:GetSpecialValueFor("crit_chance_pct")
+    self.last_attack_crit = PRDCalc_Pct(ability:GetSpecialValueFor("crit_chance_pct"), self.prd_attack_counter)
     
     if self.last_attack_crit then
         return ability:GetSpecialValueFor("crit_damage_pct")
+    else
+        self.prd_attack_counter = self.prd_attack_counter + 1
     end
 end
 
