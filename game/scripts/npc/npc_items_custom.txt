@@ -142,8 +142,13 @@
 	"item_shamelis"
 	{
 		"BaseClass"           		"item_lua"
-		"AbilityBehavior"       	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-		"SpellDispellableType" 		"SPELL_DISPELLABLE_NO"
+
+		"AbilityBehavior"       	"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"SpellDispellableType" 		"SPELL_DISPELLABLE_YES_STRONG"
+		"SpellImmunityType" "SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
 		"AbilityTextureName"		"item_shemelis"
 
 		"ScriptFile" "items/shamelis"
@@ -169,6 +174,7 @@
 
 			"active_silence_duration" "5"
 			"active_bash_duration" "1.9"
+			"silence_afterburn_pct" "55"
 		}
 	}
 

@@ -3,6 +3,29 @@ function item_shamelis:GetIntrinsicModifierName()
     return "modifier_item_shamelis"
 end
 
+function item_shamelis:OnSpellStart()
+    local target = self:GetCursorTarget()
+    local caster = self:GetCaster()
+
+    target:AddNewModifier(
+        caster,
+        self,
+        "modifier_item_shamelis_bash",
+        {
+            duration = self:GetSpecialValueFor("active_bash_duration")
+        }
+    )
+
+    target:AddNewModifier(
+        caster,
+        self,
+        "modifier_item_shamelis_silence",
+        {
+            duration = self:GetSpecialValueFor("active_silence_duration")
+        }
+    )
+end
+
 modifier_item_shamelis = class({})
 function modifier_item_shamelis:IsHidden()
     return true
@@ -95,7 +118,8 @@ modifier_item_shamelis_bash = class({})
 
 function modifier_item_shamelis_bash:IsHidden() return false end
 function modifier_item_shamelis_bash:IsDebuff() return true end
-function modifier_item_shamelis_bash:IsPurgable() return true end
+function modifier_item_shamelis_bash:IsPurgable() return false end
+function modifier_item_shamelis_bash:IsPurgeException() return true end
 
 function modifier_item_shamelis_bash:CheckState()
     return {
@@ -117,5 +141,46 @@ function modifier_item_shamelis_bash:OnCreated()
     end
 end
 
+modifier_item_shamelis_silence = class({})
+function modifier_item_shamelis_silence:IsHidden() return false end
+function modifier_item_shamelis_silence:IsDebuff() return true end
+function modifier_item_shamelis_silence:IsPurgable() return true end
+
+function modifier_item_shamelis_silence:CheckState()
+    return {
+        [MODIFIER_STATE_SILENCED] = true
+    }
+end
+
+function modifier_item_shamelis_silence:OnCreated()
+    self.start_hp = self:GetParent():GetHealth()
+end
+
+function modifier_item_shamelis_silence:OnDestroy()
+    if not IsServer() then return end
+
+    if self:GetRemainingTime() <= 0 then
+        local current_hp = self:GetParent():GetHealth()
+        if self.start_hp > current_hp then
+            ApplyDamage({
+                victim = self:GetParent(),
+                attacker = self:GetCaster(),
+                damage = (self.start_hp - current_hp) * (self:GetAbility():GetSpecialValueFor("silence_afterburn_pct") / 100),
+                damage_type = DAMAGE_TYPE_MAGICAL,
+                ability = self:GetAbility()
+            })
+        end
+    end
+end
+
+function modifier_item_shamelis_silence:GetEffectName()
+    return "particles/items2_fx/orchid.vpcf"
+end
+
+function modifier_item_shamelis_silence:GetEffectAttachType()
+    return PATTACH_OVERHEAD_FOLLOW
+end
+
 LinkLuaModifier("modifier_item_shamelis", "items/shamelis.lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_item_shamelis_bash", "items/shamelis.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_item_shamelis_silence", "items/shamelis.lua", LUA_MODIFIER_MOTION_NONE)
