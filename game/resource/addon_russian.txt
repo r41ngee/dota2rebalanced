@@ -183,6 +183,6 @@
 		"DOTA_Tooltip_ability_item_shamelis_bonus_health" "+$health"
 		"DOTA_Tooltip_ability_item_shamelis_bonus_mana_regen" "+$mana_regen"
 		"DOTA_Tooltip_ability_item_shamelis_bonus_damage" "+$damage"
-		"DOTA_Tooltip_ability_item_shamelis_Note0" "Эта способность не использует псевдослучайные события."
+		"DOTA_Tooltip_ability_item_shamelis_Note0" "Этот предмет не использует псевдослучайные события."
     }
 }
