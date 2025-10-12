@@ -10,6 +10,10 @@ function death_prophet_mystical_force:OnSpellStart()
     local caster = self:GetCaster()
     local target = self:GetCursorTarget()
 
+    if target:TriggerSpellAbsorb(self) or target:TriggerSpellReflect(self) then
+        return
+    end
+
     local projectile_name = "particles/units/heroes/hero_siren/siren_net_projectile.vpcf"
     local projectile_speed = 1500
 
