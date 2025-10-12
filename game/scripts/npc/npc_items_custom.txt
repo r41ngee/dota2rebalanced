@@ -157,6 +157,10 @@
         "ItemDeclarations"              "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH"
         "SuggestLategame"               "1"
 
+		"AbilityCooldown" "21"
+		"AbilityManaCost" "125"
+		"AbilityCastRange" "225"
+
 		"AbilityValues"
 		{
 			"bonus_damage" "75"
