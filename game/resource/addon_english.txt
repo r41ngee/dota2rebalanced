@@ -55,7 +55,6 @@
 		// Phantom assassin mortred
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new" "Coup de Grace"
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Description" "The hero gains the passive ability to gain focus after an attack. A focus attack deals critical damage. A hero can activate an ability to increase critical damage."
-		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note0" "This ability does not use pseudo-random."
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note1" "No longer increases the chance when using Stifling Dagger."
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note2" "Does not affect buildings."
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_crit_chance" "%CHANCE OF FOCUS:"
