@@ -164,5 +164,19 @@
 		"DOTA_Tooltip_ability_death_prophet_mystical_force_Note2" "Provides vision on target."
 
 		"DOTA_Tooltip_ability_special_bonus_unique_death_prophet_mystical_force_damage" "+{s:bonus_damage} Extraordinary Force damage"
+
+		// SHEMELIS
+		"DOTA_Tooltip_ability_item_shamelis" "Shemelis"
+
+		"DOTA_Tooltip_ability_item_shamelis_bonus_health" "+$health"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_damage" "+$damage"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_str" "+$str"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_agi" "+$agi"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_int" "+$int"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_ats" "+$attack"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_hpregen" "+$hp_regen"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_manaregen" "+$mana_regen"
+
+		"DOTA_Tooltip_ability_item_shamelis_Description" "<h1>Active: Bloody Burn</h1> Stuns the selected enemy for %active_bash_duration% seconds and silences him for %active_silence_duration% seconds. When the silence effect ends, the victim takes %silence_afterburn_pct%%% magic damage from the damage received during the silence. n\n<h1>Passive: Bashing Strike</h1> Each attack has a %crit_chance_pct%%% chance to deal additional %crit_damage_pct%%% damage and stun the target for %crit_bash_duration% seconds."
 	}
 }

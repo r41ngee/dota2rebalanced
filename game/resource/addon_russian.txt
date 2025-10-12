@@ -177,5 +177,19 @@
 		"DOTA_Tooltip_ability_death_prophet_mystical_force_Note2" "Даёт обзор по цели."
 
 		"DOTA_Tooltip_ability_special_bonus_unique_death_prophet_mystical_force_damage" "+{s:bonus_damage} к урону Extraordinary Force"
+
+		// SHEMELIS
+		"DOTA_Tooltip_ability_item_shamelis" "Shemelis"
+
+		"DOTA_Tooltip_ability_item_shamelis_bonus_health" "+$health"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_damage" "+$damage"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_str" "+$str"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_agi" "+$agi"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_int" "+$int"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_ats" "+$attack"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_hpregen" "+$hp_regen"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_manaregen" "+$mana_regen"
+
+		"DOTA_Tooltip_ability_item_shamelis_Description" "<h1>Активное: Bloody Burn</h1> Накладывает на выбранного врага оглушение на %active_bash_duration% сек. и безмолвие на %active_silence_duration% сек. По окончании эффекта безмолвия жертве наносится %silence_afterburn_pct%%% магического урона от полученного во время безмолвия.\n\n<h1>Пассивное: Bashing Strike</h1> Каждая атака с шансом в %crit_chance_pct%%% может нанести дополнительные %crit_damage_pct%%% урона и оглушить цель на %crit_bash_duration% сек."
     }
 }
