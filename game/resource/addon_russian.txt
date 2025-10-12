@@ -178,5 +178,8 @@
 		"DOTA_Tooltip_ability_death_prophet_mystical_force_Note2" "Даёт обзор по цели."
 
 		"DOTA_Tooltip_ability_special_bonus_unique_death_prophet_mystical_force_damage" "+{s:bonus_damage} к урону Extraordinary Force"
+
+		"DOTA_Tooltip_ability_item_shamelis" "Shamelis"
+		"DOTA_Tooltip_ability_item_shamelis_Description"		"<h1>Пассивное: Critical Strike</h1> Каждая атака может с вероятностью в %crit_chance_pct%%% нанести %crit_damage_pct%%% урона."
     }
 }
