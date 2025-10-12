@@ -81,6 +81,7 @@ function modifier_item_shamelis:GetModifierPreAttack_CriticalStrike(event)
     self.last_attack_crit = PRDCalc_Pct(ability:GetSpecialValueFor("crit_chance_pct"), self.prd_attack_counter)
     
     if self.last_attack_crit then
+        self.prd_attack_counter = 0
         return ability:GetSpecialValueFor("crit_damage_pct")
     else
         self.prd_attack_counter = self.prd_attack_counter + 1
