@@ -63,6 +63,8 @@ end
 
 function modifier_phantom_crit_new:OnCreated()
     if not IsServer() then return end
+
+    self.attackcounter = 0
     self:UpdateValues()
 end
 
@@ -79,7 +81,7 @@ function modifier_phantom_crit_new:UpdateValues()
         -- Сохраняем значения из способности
         self.passive_crit = ability:GetSpecialValueFor("passive_crit_damage")
         self.active_crit = ability:GetSpecialValueFor("active_crit_damage")
-        self.crit_chance = ability:GetSpecialValueFor("crit_chance")
+        self.crit_chance_pct = ability:GetSpecialValueFor("crit_chance")
         self.focus_duration = ability:GetSpecialValueFor("focus_duration")
     end
 end
@@ -97,9 +99,12 @@ function modifier_phantom_crit_new:OnAttackLanded(event)
     -- Проверяем, нет ли уже модификатора фокуса
     if not parent:FindModifierByNameAndCaster("modifier_phantom_crit_new_focus", parent) then
         -- Шанс активации крита
-        if RandomFloat(0, 1) < self.crit_chance / 100 then
+        if PRDCalc_Pct(self.crit_chance_pct, self.attackcounter) then
         -- if true then
             parent:AddNewModifier(parent, self:GetAbility(), "modifier_phantom_crit_new_focus", {duration = self.focus_duration})
+            self.attackcounter = 0
+        else
+            self.attackcounter = self.attackcounter + 1
         end
     end
 end

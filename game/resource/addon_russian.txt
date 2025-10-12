@@ -64,7 +64,6 @@
 		// PHANTOM
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new" "Coup de Grace"
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Description" "Герой получает пассивную способность получить фокус после атаки. Атака с фокусом наносит критический урон. \nГерой может активировать способность, чтобы увеличить критический урон."
-		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note0" "Эта способность не использует псевдо-рандом."
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note1" "Больше не увеличивает шанс при использовании Stifling Dagger."
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note2" "Не действует на постройки."
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_crit_chance" "%ШАНС НА ФОКУС:" 
