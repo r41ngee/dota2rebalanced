@@ -12,6 +12,7 @@ require('util')
 require('libraries/timers')                      -- Core lua library
 require('libraries/player_resource')             -- Core lua library
 require('gamemode')                              -- Core barebones file
+require('prd')
 
 function Precache(context)
 --[[

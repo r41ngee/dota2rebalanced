@@ -17,6 +17,7 @@
 #base "abilities/ancient_apparition.txt"
 #base "abilities/skywrath.txt"
 #base "abilities/nevermore.txt"
+#base "abilities/weaver.txt"
 
 // 9.00c
 #base "abilities/bane.txt"
@@ -26,6 +27,12 @@
 #base "abilities/ogre_magi.txt"
 
 #base "abilities/lion.txt"
+
+// 9.01
+#base "abilities/sniper.txt"
+#base "abilities/death_prophet.txt"
+#base "abilities/witch_doctor.txt"
+
 
 "DOTAAbilities"
 {

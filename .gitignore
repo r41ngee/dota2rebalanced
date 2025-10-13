@@ -4,3 +4,6 @@ game/panorama
 game/particles
 
 update.ps1
+
+game\tools_asset_info.bin
+game\tools_thumbnail_cache.bin

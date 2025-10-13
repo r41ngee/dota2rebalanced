@@ -1,0 +1,7 @@
+"DOTAUnits"
+{
+    "npc_dota_witch_doctor_death_ward"
+    {
+        "AttackDamageType" "DAMAGE_TYPE_PHYSICAL"
+    }
+}

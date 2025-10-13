@@ -123,4 +123,21 @@
 		"Ability4" "lion_mana_sacrifice"
 		"Ability5" "lion_to_hell_and_back"
 	}
+
+	"npc_dota_hero_weaver"
+	{
+		"Ability7" "weaver_damage_range"
+	}
+	
+	"npc_dota_hero_sniper"
+	{
+		"Ability5" "sniper_accurate_shooting"
+		"Ability16" "special_bonus_unique_sniper_global_shrapnel"
+	}
+
+	"npc_dota_hero_death_prophet"
+	{
+		"Ability2" "death_prophet_mystical_force"
+		"Ability12" "special_bonus_unique_death_prophet_mystical_force_damage"
+	}
 }

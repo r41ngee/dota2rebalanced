@@ -24,18 +24,30 @@
 		"DOTA_Custom7"    								                        "Olive Snake"
 		"DOTA_Custom8"    								                        "Purple Horse"
 
+		// ORIGINAL FIX
+		"DOTA_Tooltip_ability_troll_warlord_berserkers_rage_Note0"				""
+		"DOTA_Tooltip_ability_troll_warlord_switch_stance_Note0"				"Cooldowns of items that are different for ranged and melee units will be based on which form hero was in when the item was used."		
+
+
 		// Lina Overheat
 		"DOTA_Tooltip_Ability_lina_overheat_nw"									"Overheat"
-		"DOTA_Tooltip_Ability_lina_overheat_nw_Description"								"Attacks apply a stacking mark. At required stacks, the next attack deals %damage% magical damage. Buildings get part of damage."
+		"DOTA_Tooltip_Ability_lina_overheat_nw_Description"								"Attacks apply a stacking mark. At required stacks, the next attack deals bonus magical damage. Mark lasts %duration% seconds."
 		"DOTA_Tooltip_ability_lina_overheat_nw_damage"								"DAMAGE:"
 		"DOTA_Tooltip_ability_lina_overheat_nw_building_damage" 				"%BUILDING DAMAGE:"
-		"DOTA_Tooltip_Ability_lina_overheat_nw_duration"								"DEBUFF DURATION:"
-		"DOTA_Tooltip_Ability_lina_overheat_nw_required_stacks"							"REQUIRED STACKS:"
-		"DOTA_Tooltip_Ability_lina_overheat_nw_Note0" "This attack cannot miss."
+		"DOTA_Tooltip_Ability_lina_overheat_nw_Lore" "The sorceress's hands are so hot that they cause heat stroke in her enemies."
+		"DOTA_Tooltip_Ability_lina_overheat_nw_Note0" "Effects share a common refreshable duration."
+		"DOTA_Tooltip_Ability_lina_overheat_nw_Note1" "Aghanim's Shard effect cannot be purged."
+
 		"DOTA_Tooltip_ability_special_bonus_unique_lina_7" "+{s:bonus_damage} Overheat damage"
 
+		"DOTA_Tooltip_modifier_lina_overheat_nw_stack" "Overheat"
+        "DOTA_Tooltip_modifier_lina_overheat_nw_stack_Description" "Unit is affected by Overheat"
+
+		"DOTA_Tooltip_modifier_lina_overheat_nw_building" "Overheat buff"
+		"DOTA_Tooltip_modifier_lina_overheat_nw_building_Description" "Deals damage to buildings"
+
 		// Pudge
-		"DOTA_Tooltip_ability_special_bonus_unique_pudge_3_Description" "Also increaases strength multiplier {s:bonus_strength_damage} times" 
+		"DOTA_Tooltip_ability_special_bonus_unique_pudge_3_Description" "Also increases strength multiplier {s:bonus_strength_damage} times" 
 
         // Queen
         "DOTA_Tooltip_ability_queenofpain_shadow_strike_scepter_Description" "The ability is applied over an area with a radius of %aoe_radius%. When the effect of this ability on an enemy hero ends or refreshes, he emits a scream from the Scream of Pain ability. Increases the duration by %duration_tooltip% and the strike damage by %strike_damage_tooltip%."
@@ -43,7 +55,6 @@
 		// Phantom assassin mortred
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new" "Coup de Grace"
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Description" "The hero gains the passive ability to gain focus after an attack. A focus attack deals critical damage. A hero can activate an ability to increase critical damage."
-		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note0" "This ability does not use pseudo-random."
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note1" "No longer increases the chance when using Stifling Dagger."
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note2" "Does not affect buildings."
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_crit_chance" "%CHANCE OF FOCUS:"
@@ -116,5 +127,56 @@
 
 		"DOTA_Tooltip_modifier_mana_sacrifice" "Mana Sacrifice"
 		"DOTA_Tooltip_modifier_mana_sacrifice_Description" "Restores health, sacrificing mana."
+
+		// WEAVER
+		"DOTA_Tooltip_ability_weaver_shukuchi_shard_Description"			"Shukuchi puts a mark on enemies it damage. %shukuchi_attack_delay%s after Weaver exits Shukuchi, enemies with a mark within %shukuchi_attack_mark_radius% range will also be attacked with a secondary Geminate attack "
+
+		"DOTA_Tooltip_ability_weaver_damage_range" "Rewoven"
+		"DOTA_Tooltip_ability_weaver_damage_range_Description" "Increases attack range by %bonus_range_pct%%% of base damage."
+
+		"DOTA_Tooltip_modifier_weaver_damage_range" "Rewoven"
+		"DOTA_Tooltip_modifier_weaver_damage_range_Description" "Attack range increased by %dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%."
+		
+		// SNIPER
+		"DOTA_Tooltip_ability_sniper_accurate_shooting" "Holding a Position"
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_Description" "The ability owner receives a stacking effect that receives a new charge every %stack_regen_time% seconds. Each charge gives you an additional range of attack. The ability will disable and reset charges when the owner of the ability takes damage."
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_Note0" "Ability cooldown cannot be refreshed."
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_range_per_stack" "ATTACK RANGE PER EFFECT:"
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_max_stacks" "MAX. NUMBER OF EFFECTS:"
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_stack_regen_time" "EFFECT RECHARGE TIME:"
+
+		"DOTA_Tooltip_Facet_sniper_ghillie_suit_Description"	"While Take Aim is active, Sniper's attacks do not reveal him from fog of war. Increases attack range from Holding a Position."
+		"DOTA_Tooltip_ability_sniper_accurate_shooting_Facet_sniper_ghillie_suit" "Increases the attack range per effect."
+
+		"DOTA_Tooltip_modifier_sniper_accurate_shooting" "Holding a Position"
+		"DOTA_Tooltip_modifier_sniper_accurate_shooting_Description" "Increases the attack range by %dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%"
+
+		"DOTA_Tooltip_ability_special_bonus_unique_sniper_global_shrapnel" "Shrapnel с неогр. дальностью применения"
+		
+		// DEATH PROPHET DP
+		"DOTA_Tooltip_ability_death_prophet_mystical_force" "Extraordinary Force"
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_Description" "The hero launches projectiles at the target of the ability and its allies around, tying them to the ground and dealing damage."
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_radius" "RADIUS:"
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_damage" "DAMAGE:"
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_duration" "ROOT DURATION:"
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_Note0" "The projectile cannot be dodged."
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_Note1" "Instantly destroys illusions."
+		"DOTA_Tooltip_ability_death_prophet_mystical_force_Note2" "Provides vision on target."
+
+		"DOTA_Tooltip_ability_special_bonus_unique_death_prophet_mystical_force_damage" "+{s:bonus_damage} Extraordinary Force damage"
+
+		// SHEMELIS
+		"DOTA_Tooltip_ability_item_shamelis" "Shemelis"
+
+		"DOTA_Tooltip_ability_item_shamelis_bonus_health" "+$health"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_damage" "+$damage"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_str" "+$str"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_agi" "+$agi"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_int" "+$int"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_ats" "+$attack"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_hpregen" "+$hp_regen"
+		"DOTA_Tooltip_ability_item_shamelis_bonus_manaregen" "+$mana_regen"
+
+		"DOTA_Tooltip_ability_item_shamelis_Description" "<h1>Active: Bloody Burn</h1> Stuns the selected enemy for %active_bash_duration% seconds and silences him for %active_silence_duration% seconds. When the silence effect ends, the victim takes %silence_afterburn_pct%%% magic damage from the damage received during the silence. n\n<h1>Passive: Bashing Strike</h1> Each attack has a %crit_chance_pct%%% chance to deal additional %crit_damage_pct%%% damage and stun the target for %crit_bash_duration% seconds."
 	}
 }

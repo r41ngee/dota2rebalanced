@@ -1,0 +1,8 @@
+"DOTAAbilities"
+{
+    "witch_doctor_death_ward"
+    {
+        // "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+    }
+}
