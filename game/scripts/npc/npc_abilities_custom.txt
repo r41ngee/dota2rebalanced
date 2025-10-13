@@ -31,6 +31,7 @@
 // 9.01
 #base "abilities/sniper.txt"
 #base "abilities/death_prophet.txt"
+#base "abilities/witch_doctor.txt"
 
 
 "DOTAAbilities"
