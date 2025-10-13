@@ -19,6 +19,13 @@ function item_shamelis:OnSpellStart()
             duration = self:GetSpecialValueFor("active_bash_duration")
         }
     )
+    local bash_particle = ParticleManager:CreateParticle(
+        "particles/items_fx/abyssal_blade.vpcf",
+        PATTACH_ABSORIGIN,
+        target
+    )
+
+    ParticleManager:ReleaseParticleIndex(bash_particle)
 
     target:AddNewModifier(
         caster,
