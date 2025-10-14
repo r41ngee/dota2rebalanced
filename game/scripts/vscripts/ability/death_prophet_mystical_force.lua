@@ -9,10 +9,7 @@ function death_prophet_mystical_force:OnSpellStart()
 
     local caster = self:GetCaster()
     local target = self:GetCursorTarget()
-
-    if target:TriggerSpellAbsorb(self) or target:TriggerSpellReflect(self) then
-        return
-    end
+    self.main_target = target
 
     local projectile_name = "particles/units/heroes/hero_siren/siren_net_projectile.vpcf"
     local projectile_speed = 1500
@@ -50,6 +47,10 @@ function death_prophet_mystical_force:OnProjectileHit(i, location)
     if not IsServer() then return end
     
     local caster = self:GetCaster()
+
+    if i == self.main_target and (i:TriggerSpellAbsorb(self) or i:TriggerSpellReflect(self)) then
+        return
+    end
 
     if i:IsIllusion() then
         i:Kill(self, caster)
