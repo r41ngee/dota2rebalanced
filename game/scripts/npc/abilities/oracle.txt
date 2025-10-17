@@ -1,0 +1,78 @@
+"DOTAAbilities"
+{
+    "oracle_fortunes_end_lua"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass" "ability_lua"
+        "ScriptFile" "ability/oracle_fortunes_end.lua"
+        
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Oracle.FortunesEnd.Target"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"850"
+		"AbilityCastPoint"				"0"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"18 14 10 6"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"channel_time"
+			{
+				"value"								"2.5"
+			}
+			"damage"
+			{
+				"value"					"100 160 220 280"
+			}
+			"bolt_speed"				"1200"
+			"minimum_purge_duration"
+			{
+				"value"								"0.75"
+				"special_bonus_unique_oracle_2"		"+0.5"
+			}
+			"maximum_purge_duration"
+			{
+				"value"								"2.75"
+				"special_bonus_unique_oracle_2"		"+0.5"
+			}
+			"radius"								
+			{
+				"value"		"350"
+				"affected_by_aoe_increase"	"1"
+			}
+			"damage_per_buff"				
+			{
+				"value"					"0"
+				"special_bonus_unique_oracle_damage_per_purge"			"+80"
+			}	
+			"heal_per_debuff"
+			{
+				"value"					"0"
+				"special_bonus_unique_oracle_damage_per_purge"			"+80"
+			}
+			"purge_constantly"
+			{
+				"special_bonus_unique_oracle_7"		"=1"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+}
