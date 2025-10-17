@@ -4,6 +4,8 @@
 // https://moddota.com/tools/combining-kv-files-using-base
 // #base "heroes/chaos_knight.txt"
 
+#base "heroes/creature.txt"
+
 "DOTAHeroes"
 {
 	// Example of overriding a hero (Ancient Apparition -> Detonator)

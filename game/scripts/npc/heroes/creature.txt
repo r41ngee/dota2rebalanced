@@ -1,0 +1,172 @@
+"DOTAHeroes"
+{
+    "npc_dota_hero_creature"
+    {
+        "BaseClass"					"npc_dota_hero_abyssal_underlord"
+		"HeroID"					"203"
+
+		// Models
+		//----------------------------------------------------------------
+		// need custom model
+		"Model"					"models/heroes/abyssal_underlord/abyssal_underlord_v2.vmdl"
+		"ModelScale"			"1"
+		"SoundSet"				"Hero_AbyssalUnderlord"
+		// "particle_folder"		"particles/units/heroes/hero_aqua"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_abyssal_underlord.vsndevts"
+		"VoiceFile"				"soundevents/voscripts/game_sounds_vo_abyssal_underlord.vsndevts"
+
+		// Abilities
+		//----------------------------------------------------------------
+		// "Ability1"						"aqua_god_blow"
+		// "Ability2"						"aqua_sacred_dispel"
+		// "Ability3"						"aqua_gods_blessing"
+		// "Ability4"						"aqua_gods_blessing_eris"
+		// "Ability5"						"generic_hidden"
+		// "Ability6"						"aqua_resurrection"
+		// "Ability10"						"special_bonus_unique_aqua_1"
+		// "Ability11"						"special_bonus_unique_aqua_2"
+		// "Ability12"						"special_bonus_unique_aqua_3"
+		// "Ability13"						"special_bonus_unique_aqua_4"
+		// "Ability14"						"special_bonus_unique_aqua_5"
+		// "Ability15"						"special_bonus_unique_aqua_6"
+		// "Ability16"						"special_bonus_unique_aqua_7"
+		// "Ability17"						"special_bonus_unique_aqua_8"
+
+        "ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"weapon"
+				"SlotText"		"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"2500"
+				"MaxPolygonsLOD1"	"1000"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"	"3000"
+				"MaxPolygonsLOD1"	"1200"
+			}
+
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"armor"
+				"SlotText"		"#LoadoutSlot_Armor"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"	"6000"
+				"MaxPolygonsLOD1"	"2400"
+			}
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"ambient_effects"
+				"SlotText"		"#LoadoutSlot_Ambient_Effects"
+				"DisplayInLoadout"	"0"
+			}
+			"5"
+			{
+				"SlotIndex"		"5"
+				"SlotName"		"body_head"
+				"SlotText"		"#LoadoutSlot_Head"
+				"DisplayInLoadout" 	"0"
+			}
+			"6"
+			{
+				"SlotIndex"		"6"
+				"SlotName"		"ability_effects_1"
+				"SlotText"		"abyssal_underlord_firestorm"
+				"DisplayInLoadout" "0"
+			}
+			"7"
+			{
+				"SlotIndex"		"7"
+				"SlotName"		"ability_effects_2"
+				"SlotText"		"abyssal_underlord_pit_of_malice"
+				"DisplayInLoadout" "0"
+			}
+			"8"
+			{
+				"SlotIndex"		"8"
+				"SlotName"		"ability_effects_3"
+				"SlotText"		"abyssal_underlord_atrophy_aura"
+				"DisplayInLoadout" "0"
+			}
+			"9"
+			{
+				"SlotIndex"		"9"
+				"SlotName"		"ability_effects_4"
+				"SlotText"		"abyssal_underlord_dark_portal"
+				"DisplayInLoadout" "0"
+			}
+			"10"
+			{
+				"SlotIndex"		"10"
+				"SlotName"		"hero_effigy"
+				"SlotText"		"#LoadoutSlot_HeroEffigy"
+			}
+		}
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				    "2"		// Physical protection.
+		"MagicalResistance"				"25"	// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"26"
+		"AttackDamageMax"			"32"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.3"
+		"AttackRange"				"175"
+		"AttackAcquisitionRange"	"275"
+
+		// Attributes
+		//----------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"20"
+		"AttributeStrengthGain"		"2.7"
+		"AttributeBaseIntelligence"	"20"
+		"AttributeIntelligenceGain"	"2.0"
+		"AttributeBaseAgility"		"29"
+		"AttributeAgilityGain"		"3.6"
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"310"
+		"MovementTurnRate"			"0.9"
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"
+		"VisionNighttimeRange"		"1800"
+    }
+}
