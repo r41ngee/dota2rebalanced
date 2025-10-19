@@ -76,7 +76,10 @@ function modifier_lina_overheat_nw:OnAttackLanded(event)
                 damage_type = ability:GetAbilityDamageType(),
                 ability = ability
             })
-            SendOverheadEventMessage(victim, 4, victim, final_damage, nil)
+
+            local spellAmp = parent:GetSpellAmplification(false)
+
+            SendOverheadEventMessage(victim, 4, victim, final_damage * (spellAmp + 1), nil)
             mark_modifier:Destroy()
         else
             mark_modifier:IncrementStackCount()
