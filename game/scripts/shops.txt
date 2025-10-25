@@ -206,6 +206,8 @@
 		"item"		"item_disperser"
 		"item"		"item_butterfly"
 		"item"		"item_bloodthorn"
+
+		"item"		"item_shamelis"
 		
 		// Not purchasable items
 		"item"		"item_aetherial_halo"	
