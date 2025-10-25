@@ -4,6 +4,9 @@
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
+        "BaseClass" "ability_lua"
+        "ScriptFile" "ability/morphling_bubble.lua"
+
 
         "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
         "MaxLevel"						"1"
