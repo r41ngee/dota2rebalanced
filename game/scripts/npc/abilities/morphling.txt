@@ -14,8 +14,100 @@
 
         "AbilityValues"
         {
-            "max_outcome" "50"
-            "max_income" "50"
+            "ms_limit_pct" "999"
+            "agi_per_ms" "10"
         }
     }
+
+    "morphling_adaptive_strike_agi"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass" "ability_lua"
+        "ScriptFile" "ability/morphling_adaptive.lua"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Morphling.AdaptiveStrike"
+
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"600 700 800 900"
+		"AbilityCastPoint"				"0.25"
+ 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+
+        "AbilityTextureName" "morphling_adaptive_strike_agi"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"40 50 60 70"		
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.3"	// Primarily about the damage
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				
+            "AbilityCooldown"
+            {
+                "value"								"17 14 11 8"
+                "special_bonus_unique_morphling_7"	"-3"
+            }
+            "damage_base"								
+            {
+                "value"								"25 50 75 100"
+                "CalculateSpellDamageTooltip"		"1"
+            }
+            "damage_agi_pct" "190 205 220 235"
+            "stun_min"						
+            {
+                "value"								"0"
+                "special_bonus_facet_morphling_str"	"0.5"
+            }
+            "stun_max"						
+            {
+                "value"								"0"
+                "special_bonus_facet_morphling_str"	"2.4"
+            }
+            "knockback_min"					
+            {
+                "value"								"50"
+            }
+            "knockback_max"					
+            {
+                "value"								"350"
+            }
+            "knockback_duration"
+            {
+                "value"								"0.5"
+            }
+            "projectile_speed"						"1150"
+            "extra_targets"
+            {
+                "value"								"0"
+            }
+
+
+            "ally_cast"
+            {
+                "value" "0"
+                "special_bonus_facet_morphling_int" "=1"
+            }
+            "heal_pct"
+            {
+                "value" "0"
+                "special_bonus_facet_morphling_int" "=10"
+            }
+		}
+	}
 }
