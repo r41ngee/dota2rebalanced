@@ -7,15 +7,23 @@
         "BaseClass" "ability_lua"
         "ScriptFile" "ability/morphling_bubble.lua"
 
+        "AbilityTextureName" "hero_morphling"
 
         "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-        "MaxLevel"						"1"
-        "IsBreakable"					"1"
+        "MaxLevel"						"4"
+        "IsBreakable"					"0"
+
+        "DependentOnAbility" "morphling_replicate"
 
         "AbilityValues"
         {
-            "ms_limit_pct" "999"
-            "agi_per_ms" "10"
+            "ms_pct_agi" "0.3"
+            "max_ms_pct" "10 20 30 40"
+
+            "bonus_base_attack" "18 24 36 54"
+
+            "agi_gain" "2.9"
+            "int_gain" "2.8"
         }
     }
 
@@ -60,7 +68,7 @@
 				
             "AbilityCooldown"
             {
-                "value"								"17 14 11 8"
+                "value"								"17 15 13 11"
                 "special_bonus_unique_morphling_7"	"-3"
             }
             "damage_base"								
