@@ -119,7 +119,7 @@ function morphling_adaptive_strike_agi:OnProjectileHit()
         local str_factor = 1 - agi_factor
 
         -- Интерполяция параметров
-        local damage_mult = self.agi * self:GetSpecialValueFor("damage_agi_pct") / 100
+        local damage_mult = self.agi * self:GetSpecialValueFor("damage_agi")
         local stun_duration = self:GetSpecialValueFor("stun_min") + (self:GetSpecialValueFor("stun_max") - self:GetSpecialValueFor("stun_min")) * (1 / agi_to_str_ratio)
         local knockback_distance = self:GetSpecialValueFor("knockback_min") + (self:GetSpecialValueFor("knockback_max") - self:GetSpecialValueFor("knockback_min")) * str_factor
 

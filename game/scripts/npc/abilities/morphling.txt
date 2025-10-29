@@ -68,7 +68,11 @@
                 "value"								"25 50 75 100"
                 "CalculateSpellDamageTooltip"		"1"
             }
-            "damage_agi_pct" "190 205 220 235"
+            "damage_agi"
+            { 
+                "value" "1.1 1.2 1.3 1.4"
+                "special_bonus_facet_morphling_agi" "+20%"
+            }
             "stun_min"						
             {
                 "value"								"0"
