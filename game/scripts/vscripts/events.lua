@@ -502,9 +502,9 @@ function barebones:OnEntityKilled(keys)
 			-- end
 
 			-- Killer is a neutral creep
-			if killer_unit:IsNeutralUnitType() then
-				-- If a hero is killed by a neutral creep, respawn time can be modified here
-			end
+			-- if killer_unit:IsNeutralUnitType() then
+			-- 	-- If a hero is killed by a neutral creep, respawn time can be modified here
+			-- end
 
 			-- Capping Respawn Time (MAX respawn time)
 			if respawn_time > MAX_RESPAWN_TIME then
