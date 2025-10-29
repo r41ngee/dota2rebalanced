@@ -166,4 +166,8 @@
 			}
 		}
 	}
+	"npc_dota_hero_pugna"
+	{
+		"Ability6" "pugna_life_drain_lua"
+	}
 }

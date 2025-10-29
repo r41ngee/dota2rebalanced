@@ -1,0 +1,98 @@
+"DOTAAbilities"
+{
+    "pugna_life_drain_lua"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityType"					"ABILITY_TYPE_ULTIMATE"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+        "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+        "AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+        "AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE | DOTA_UNIT_TARGET_FLAG_NO_INVIS" 
+        "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+        "FightRecapLevel"				"1"
+        "HasShardUpgrade"			"1"
+        "HasScepterUpgrade"			"1"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"				"700"
+        "AbilityCastPoint"				"0.2 0.2 0.2"
+        "AbilityChannelTime"			"10.0"
+        "AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+        "AbilityChannelAnimation"		"ACT_DOTA_CHANNEL_ABILITY_4"
+        
+        // Time		
+        //-------------------------------------------------------------------------------------------------------------
+        
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"				"100 150 200"
+        
+        // Stats
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityModifierSupportValue"	"0.0"	// All about the damage
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            "health_drain"
+            {
+                "value"					"150 250 350"
+                "CalculateSpellDamageTooltip"	"1"
+                "DamageTypeTooltip"		"DAMAGE_TYPE_MAGICAL"
+            }
+
+            "health_drain_death_boost"
+            {
+                "value"					"0"
+                "special_bonus_facet_pugna_drain_souls"	"+20"
+            }
+
+            "ally_healing"
+            {
+                "value"					"150 250 350"
+            }
+            "health_to_mana_rate"		"0"
+            "tick_rate"					"0.25"
+            "drain_buffer"				"200"
+            "shard_damage_pct_from_ward"
+            {
+                "special_bonus_shard"			"75"
+            }
+            "bonus_heal_pct"
+            {
+                "special_bonus_unique_pugna_1"			"+20"
+            }
+            "spell_amp_drain_rate"
+            {
+                "special_bonus_scepter"		"+8"
+            }
+            "spell_amp_drain_max"
+            {
+                "special_bonus_scepter"		"+75"
+            }
+            "spell_amp_drain_rate_ward"
+            {
+                "special_bonus_scepter"		"+4"
+            }
+            "spell_amp_drain_duration"
+            {
+                "special_bonus_scepter"		"+8"
+            }			
+            "max_spell_amp_drain_pct"
+            {
+                "special_bonus_scepter"		"+100"
+            }	
+            "AbilityCooldown"				
+            {
+                "value"						"7"
+                "special_bonus_scepter"		"-50%"
+            }
+        }
+    }
+}
