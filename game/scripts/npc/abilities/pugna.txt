@@ -2,6 +2,9 @@
 {
     "pugna_life_drain_lua"
     {
+        "BaseClass" "ability_lua"
+        "ScriptFile" "ability/pugna_life_drain.lua"
+
         // General
         //-------------------------------------------------------------------------------------------------------------
         "AbilityType"					"ABILITY_TYPE_ULTIMATE"
