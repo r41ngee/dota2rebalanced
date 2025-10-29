@@ -165,6 +165,29 @@
 
 		"DOTA_Tooltip_ability_special_bonus_unique_death_prophet_mystical_force_damage" "+{s:bonus_damage} Extraordinary Force damage"
 
+		// MORPHLING
+		"DOTA_Tooltip_facet_morphling_int" "Jacuzzi"
+		"DOTA_Tooltip_facet_morphling_int_Description" "The hero's primary attribute is intelligence. Increases base damage. Increases movement speed for agility. Allows Adaptive Strike to be used on an ally to heal them."
+
+		"DOTA_Tooltip_ability_morphling_bubble" "Jacuzzi"
+		"DOTA_Tooltip_ability_morphling_bubble_Description" "The hero's primary attribute is intelligence. Base damage increased by %bonus_base_attack%. Increases movement speed by %ms_pct_agi% per point of agility after subtracting strength, but not exceeding a certain value."
+		"DOTA_Tooltip_ability_morphling_bubble_max_ms_pct" "%MAX MOVEMENT SPEED:"
+
+		"DOTA_Tooltip_modifier_morphling_bubble_Description" "Speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%. Base damage increased by %dMODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE%."
+
+		
+		"DOTA_Tooltip_ability_morphling_adaptive_strike_agi_damage_agi" "DAMAGE PER AGILITY POINT:"
+		"DOTA_Tooltip_ability_morphling_adaptive_strike_agi_damage_max"                    ""
+		"DOTA_Tooltip_ability_morphling_adaptive_strike_agi_damage_min"                    ""
+
+		"DOTA_Tooltip_Facet_morphling_agi_Description"                            "The hero's primary attribute is <font color='#9acd32'>agility</font>. He attacks enemies in the path of Waveform. Increases the damage of Adaptive Strike."
+		"DOTA_Tooltip_ability_morphling_adaptive_strike_agi_facet_morphling_agi" "Increases the damage of Adaptive Strike by %bonus_damage_agi%%%"
+
+		"DOTA_Tooltip_ability_morphling_adaptive_strike_agi_facet_morphling_int" "Allows you to cast the ability on an ally to heal them for %heal_pct%%% of their maximum health, while costing %health_cost_multiplier% times more health."
+		"DOTA_Tooltip_ability_morphling_adaptive_strike_agi_heal_pct" "%HEALING PERCENTAGE OF MAX HEALTH:"
+		"DOTA_Tooltip_ability_morphling_adaptive_strike_agi_health_cost_multiplier" "HEALTH COST MULTIPLIER:"
+
+
 		// SHEMELIS
 		"DOTA_Tooltip_ability_item_shamelis" "Shemelis"
 
