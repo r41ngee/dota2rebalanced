@@ -38,6 +38,11 @@ end
 --------------------------------------------------------------------------------
 -- Основная логика способности
 --------------------------------------------------------------------------------
+
+function morphling_adaptive_strike_agi:OnAbilityPhaseStart()
+    self:GetHealthCost()
+end
+
 function morphling_adaptive_strike_agi:OnSpellStart()
 	if not IsServer() then return end
     self.effect_impact = false
@@ -56,13 +61,19 @@ function morphling_adaptive_strike_agi:OnSpellStart()
     self.str = self.caster:GetStrength()
 
 	-- выбираем тип снаряда и поведение
+    local isAlly = self.caster:GetTeamNumber() == self.target:GetTeamNumber()
+
 	local projectile_name
-	if self.agi >= self.str or self.caster:GetTeamNumber() == self.target:GetTeamNumber() then
+	if self.agi >= self.str or isAlly then
 		projectile_name = "particles/units/heroes/hero_morphling/morphling_adaptive_strike_agi_proj.vpcf"
 		self.effect_impact = true -- только AGI версия создаёт эффект импакта при попадании
 	else
 		projectile_name = "particles/units/heroes/hero_morphling/morphling_adaptive_strike_str_proj.vpcf"
 		self.effect_impact = false -- STR версия имеет встроенный эффект
+	end
+
+    if not isAlly then
+        self:RefundHealthCost()
 	end
 
     ProjectileManager:CreateTrackingProjectile({
@@ -73,6 +84,15 @@ function morphling_adaptive_strike_agi:OnSpellStart()
         iMoveSpeed = projectile_speed,
         bDodgeable = not self.target:GetTeamNumber() == self.caster:GetTeamNumber(),
     })
+end
+
+function morphling_adaptive_strike_agi:GetHealthCost()
+    self.caster = self:GetCaster()
+    if self.caster:HasModifier("modifier_morphling_bubble") then
+        self.heal = self.caster:GetMaxHealth() * self:GetSpecialValueFor("heal_pct") / 100
+        return self.heal * self:GetSpecialValueFor("health_cost_multiplier")
+    end
+    return 0
 end
 
 function morphling_adaptive_strike_agi:OnProjectileHit()
@@ -126,25 +146,15 @@ function morphling_adaptive_strike_agi:OnProjectileHit()
         })
     else
         self.effect_impact = true
-        local heal_pct = self:GetSpecialValueFor("heal_pct")
 
-        self.target:Heal(self.caster:GetHealth() * heal_pct / 100, self)
+        self.target:Heal(self.heal, self)
         SendOverheadEventMessage(
             nil,
             OVERHEAD_ALERT_HEAL,
             self.target,
-            self.caster:GetHealth() * heal_pct / 100,
+            self.heal,
             nil
         )
-
-        ApplyDamage({
-            victim = self.caster,
-            attacker = self.caster,
-            damage = self.caster:GetHealth() * heal_pct / 100,
-            damage_type = DAMAGE_TYPE_PURE,
-            damage_flags = DOTA_DAMAGE_FLAG_NON_LETHAL,
-            ability = self
-        })
     end
 
 	-- Эффекты
