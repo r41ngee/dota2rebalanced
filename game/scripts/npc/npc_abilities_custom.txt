@@ -33,6 +33,9 @@
 #base "abilities/death_prophet.txt"
 #base "abilities/witch_doctor.txt"
 
+// 9.01b
+#base "abilities/morphling.txt"
+ 
 
 "DOTAAbilities"
 {

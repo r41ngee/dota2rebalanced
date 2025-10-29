@@ -140,4 +140,30 @@
 		"Ability2" "death_prophet_mystical_force"
 		"Ability12" "special_bonus_unique_death_prophet_mystical_force_damage"
 	}
+
+	"npc_dota_hero_morphling"
+	{
+		// "Ability2" "morphling_adaptive_strike_agi_lua"
+		"Facets"
+		{
+			"morphling_int"
+			{
+				"Icon" "Intelligence"
+				"Color" "Blue"
+
+				"Abilities"
+				{
+					"Ability1"
+					{
+						"AbilityName" "morphling_bubble"
+					}
+				}
+			}
+
+			"morphling_str"
+			{
+				"Deprecated" "true"
+			}
+		}
+	}
 }
