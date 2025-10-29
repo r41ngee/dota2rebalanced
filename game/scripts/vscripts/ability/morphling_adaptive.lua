@@ -5,7 +5,7 @@ LinkLuaModifier("modifier_morphling_adaptive_stun", "ability/morphling_adaptive.
 morphling_adaptive_strike_agi = class({})
 
 function morphling_adaptive_strike_agi:CastFilterResultTarget(target)
-    
+
     local caster = self:GetCaster()
 
     if caster == target then return UF_FAIL_CUSTOM end
@@ -44,37 +44,37 @@ function morphling_adaptive_strike_agi:OnAbilityPhaseStart()
 end
 
 function morphling_adaptive_strike_agi:OnSpellStart()
-	if not IsServer() then return end
+    if not IsServer() then return end
     self.effect_impact = false
 
-	self.caster = self:GetCaster()
-	self.target = self:GetCursorTarget()
+    self.caster = self:GetCaster()
+    self.target = self:GetCursorTarget()
 
-	-- Параметры из AbilityValues
-	local projectile_speed  = self:GetSpecialValueFor("projectile_speed")
+    -- Параметры из AbilityValues
+    local projectile_speed  = self:GetSpecialValueFor("projectile_speed")
 
-    
+
     if self.target:TriggerSpellAbsorb(self) or self.target:TriggerSpellReflect(self) then return end
 
     -- Атрибуты
     self.agi = self.caster:GetAgility()
     self.str = self.caster:GetStrength()
 
-	-- выбираем тип снаряда и поведение
+    -- выбираем тип снаряда и поведение
     local isAlly = self.caster:GetTeamNumber() == self.target:GetTeamNumber()
 
-	local projectile_name
-	if self.agi >= self.str or isAlly then
-		projectile_name = "particles/units/heroes/hero_morphling/morphling_adaptive_strike_agi_proj.vpcf"
-		self.effect_impact = true -- только AGI версия создаёт эффект импакта при попадании
-	else
-		projectile_name = "particles/units/heroes/hero_morphling/morphling_adaptive_strike_str_proj.vpcf"
-		self.effect_impact = false -- STR версия имеет встроенный эффект
-	end
+    local projectile_name
+    if self.agi >= self.str or isAlly then
+        projectile_name = "particles/units/heroes/hero_morphling/morphling_adaptive_strike_agi_proj.vpcf"
+        self.effect_impact = true -- только AGI версия создаёт эффект импакта при попадании
+    else
+        projectile_name = "particles/units/heroes/hero_morphling/morphling_adaptive_strike_str_proj.vpcf"
+        self.effect_impact = false -- STR версия имеет встроенный эффект
+    end
 
     if not isAlly then
         self:RefundHealthCost()
-	end
+    end
 
     ProjectileManager:CreateTrackingProjectile({
         EffectName = projectile_name,
@@ -96,7 +96,7 @@ function morphling_adaptive_strike_agi:GetHealthCost()
 end
 
 function morphling_adaptive_strike_agi:OnProjectileHit()
-    
+
     if self.target:GetTeamNumber() ~= self.caster:GetTeamNumber() then
 
         -- Рассчитываем соотношение
@@ -125,7 +125,7 @@ function morphling_adaptive_strike_agi:OnProjectileHit()
 
         -- Наносим урон
         print("mult="..damage_mult)
-        
+
         local damage = self:GetSpecialValueFor("damage_base") + damage_mult
         print("damage="..damage)
         ApplyDamage({
@@ -157,21 +157,21 @@ function morphling_adaptive_strike_agi:OnProjectileHit()
         )
     end
 
-	-- Эффекты
+    -- Эффекты
     if self.effect_impact then
         local particle_name = "particles/units/heroes/hero_morphling/morphling_adaptive_strike.vpcf"
-        
+
         -- берём позицию цели и проецируем на землю
         local origin = self.target:GetAbsOrigin()
         origin.z = GetGroundHeight(origin, self.target)
-    
+
         local impact_fx = ParticleManager:CreateParticle(particle_name, PATTACH_WORLDORIGIN, nil)
         ParticleManager:SetParticleControl(impact_fx, 1, origin)
         ParticleManager:SetParticleControl(impact_fx, 0, self.caster:GetAbsOrigin()) -- направление
         ParticleManager:ReleaseParticleIndex(impact_fx)
     end
 
-	self.target:EmitSound("Hero_Morphling.AdaptiveStrike")
+    self.target:EmitSound("Hero_Morphling.AdaptiveStrike")
 end
 
 --------------------------------------------------------------------------------
@@ -183,60 +183,60 @@ function modifier_morphling_adaptive_knockback:IsHidden() return true end
 function modifier_morphling_adaptive_knockback:IsDebuff() return true end
 function modifier_morphling_adaptive_knockback:IsPurgable() return false end
 function modifier_morphling_adaptive_knockback:GetAttributes()
-	return MODIFIER_ATTRIBUTE_MULTIPLE
+    return MODIFIER_ATTRIBUTE_MULTIPLE
 end
 
 function modifier_morphling_adaptive_knockback:OnCreated(kv)
-	if not IsServer() then return end
+    if not IsServer() then return end
 
-	self.parent = self:GetParent()
-	self.caster = self:GetCaster()
-	self.ability = self:GetAbility()
+    self.parent = self:GetParent()
+    self.caster = self:GetCaster()
+    self.ability = self:GetAbility()
 
-	self.distance = kv.distance or 0
-	self.duration = kv.duration or 0.5
-	self.stun = kv.stun == 1
-	self.stun_duration = kv.stun_duration or 0
+    self.distance = kv.distance or 0
+    self.duration = kv.duration or 0.5
+    self.stun = kv.stun == 1
+    self.stun_duration = kv.stun_duration or 0
 
-	-- направление от кастера к цели
-	self.direction = (self.parent:GetAbsOrigin() - self.caster:GetAbsOrigin()):Normalized()
-	self.speed = self.distance / self.duration
-	self.traveled = 0
+    -- направление от кастера к цели
+    self.direction = (self.parent:GetAbsOrigin() - self.caster:GetAbsOrigin()):Normalized()
+    self.speed = self.distance / self.duration
+    self.traveled = 0
 
-	if self.stun then
-		self.parent:AddNewModifier(self.caster, self.ability, "modifier_morphling_adaptive_stun", { duration = self.stun_duration })
-	end
+    if self.stun then
+        self.parent:AddNewModifier(self.caster, self.ability, "modifier_morphling_adaptive_stun", { duration = self.stun_duration })
+    end
 
-	if not self:ApplyHorizontalMotionController() then
-		self:Destroy()
-	end
+    if not self:ApplyHorizontalMotionController() then
+        self:Destroy()
+    end
 end
 
 function modifier_morphling_adaptive_knockback:UpdateHorizontalMotion(me, dt)
-	if not IsServer() then return end
+    if not IsServer() then return end
 
-	local move = self.direction * self.speed * dt
-	self.traveled = self.traveled + self.speed * dt
+    local move = self.direction * self.speed * dt
+    self.traveled = self.traveled + self.speed * dt
 
-	if self.traveled >= self.distance then
-		self:Destroy()
-		return
-	end
+    if self.traveled >= self.distance then
+        self:Destroy()
+        return
+    end
 
-	local new_pos = me:GetAbsOrigin() + move
-	me:SetAbsOrigin(new_pos)
+    local new_pos = me:GetAbsOrigin() + move
+    me:SetAbsOrigin(new_pos)
 end
 
 function modifier_morphling_adaptive_knockback:OnHorizontalMotionInterrupted()
-	if not IsServer() then return end
-	self:Destroy()
+    if not IsServer() then return end
+    self:Destroy()
 end
 
 function modifier_morphling_adaptive_knockback:OnDestroy()
-	if not IsServer() then return end
-	local parent = self:GetParent()
-	parent:RemoveHorizontalMotionController(self)
-	FindClearSpaceForUnit(parent, parent:GetAbsOrigin(), false)
+    if not IsServer() then return end
+    local parent = self:GetParent()
+    parent:RemoveHorizontalMotionController(self)
+    FindClearSpaceForUnit(parent, parent:GetAbsOrigin(), false)
 end
 
 --------------------------------------------------------------------------------
@@ -250,15 +250,15 @@ function modifier_morphling_adaptive_stun:IsStunDebuff() return true end
 function modifier_morphling_adaptive_stun:IsPurgable() return true end
 
 function modifier_morphling_adaptive_stun:CheckState()
-	return {
-		[MODIFIER_STATE_STUNNED] = true,
-	}
+    return {
+        [MODIFIER_STATE_STUNNED] = true,
+    }
 end
 
 function modifier_morphling_adaptive_stun:GetEffectName()
-	return "particles/generic_gameplay/generic_stunned.vpcf"
+    return "particles/generic_gameplay/generic_stunned.vpcf"
 end
 
 function modifier_morphling_adaptive_stun:GetEffectAttachType()
-	return PATTACH_OVERHEAD_FOLLOW
+    return PATTACH_OVERHEAD_FOLLOW
 end
