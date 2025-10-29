@@ -159,6 +159,11 @@
 					}
 				}
 			}
+
+			"morphling_str"
+			{
+				"Deprecated" "true"
+			}
 		}
 	}
 }
