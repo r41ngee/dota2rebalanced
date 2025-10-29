@@ -148,7 +148,7 @@
 		{
 			"morphling_int"
 			{
-				"Icon" "Intellect"
+				"Icon" "Intelligence"
 				"Color" "Blue"
 
 				"Abilities"
