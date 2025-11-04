@@ -166,4 +166,11 @@
 			}
 		}
 	}
+
+	"npc_dota_hero_pudge"
+	{
+		"Ability4" "pudge_consume_lua"
+		"Ability5" "pudge_eject_lua"
+		"Ability7" "pudge_innate_graft_flesh"
+	}
 }
