@@ -64,13 +64,23 @@
 		"AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO"
 
+		"AbilityTextureName" "pudge_consume"
+
 		"IsGrantedByShard" "1"
 		"MaxLevel" "1"
 
 		"AbilityCooldown" "55"
 		"AbilityHealthCost" "125"
 		"AbilityManaCost" "50"
+
+		"AbilityCastRange" "325"
+		"AbilityCastPoint" "0.225"
 		
+
+		"AbilityValues"
+		{
+			"regen_pct" "5"
+		}
 	}
 
 	"pudge_eject_lua"
@@ -84,5 +94,7 @@
 
 		"IsGrantedByShard" "1"
 		"MaxLevel" "1"
+
+		"AbilityCooldown" "1"
 	}
 }
