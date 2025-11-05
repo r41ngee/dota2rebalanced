@@ -47,7 +47,18 @@
 		"DOTA_Tooltip_modifier_lina_overheat_nw_building_Description" "Deals damage to buildings"
 
 		// Pudge
-		"DOTA_Tooltip_ability_special_bonus_unique_pudge_3_Description" "Also increases strength multiplier {s:bonus_strength_damage} times" 
+		"DOTA_Tooltip_ability_special_bonus_unique_pudge_3_Description" "Also increases strength multiplier {s:bonus_strength_damage} times"
+
+		"DOTA_Tooltip_ability_pudge_consume_lua" "Swallow"
+        "DOTA_Tooltip_ability_pudge_consume_lua_Description" "The hero consumes a selected ally, hiding them inside his body and restoring a portion of their maximum health."
+		"DOTA_Tooltip_ability_pudge_consume_lua_regen_pct" "%MAX HEALTH REGENERATION:"
+        "DOTA_Tooltip_ability_pudge_consume_lua_Note0" "This ability cannot be stolen."
+		"DOTA_Tooltip_ability_pudge_consume_lua_Note1" "Auras function as normal."
+        "DOTA_Tooltip_ability_pudge_consume_lua_Lore" "The Butcher loves the taste of his allies, but he can't eat them."
+
+
+		"DOTA_Tooltip_ability_pudge_eject_lua" "Eject"
+        "DOTA_Tooltip_ability_pudge_eject_lua_Description" "Spits out the consumed hero."
 
         // Queen
         "DOTA_Tooltip_ability_queenofpain_shadow_strike_scepter_Description" "The ability is applied over an area with a radius of %aoe_radius%. When the effect of this ability on an enemy hero ends or refreshes, he emits a scream from the Scream of Pain ability. Increases the duration by %duration_tooltip% and the strike damage by %strike_damage_tooltip%."
