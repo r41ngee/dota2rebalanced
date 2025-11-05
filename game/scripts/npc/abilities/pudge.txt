@@ -1,14 +1,99 @@
 "DOTAAbilities"
 {
     "pudge_dismember"
+	{
+		"AbilityChannelTime"
+		{
+			"value"				"2.25 2.5 2.75"
+			"special_bonus_unique_pudge_6"	"+0.75"
+		}
+
+		"AbilityCooldown"
+		{
+			"value"							"45 40 35"
+		}
+	}
+
+    "pudge_meat_hook"
     {
+        "HasShardUpgrade" "0"
         "AbilityValues"
-        {
-            "AbilityChannelTime"
-            {
-                "value" "2.25 2.5 2.75"
-            }
-            "AbilityCooldown" "45 40 35"
-        }
+		{
+			"damage"
+			{
+				"value"									"150 220 290 360"
+				"special_bonus_facet_pudge_flayers_hook"	"=80 =120 =160 =200"
+				"special_bonus_unique_pudge_7"			"+150"
+			}
+
+			"hook_speed"
+			{
+				"value"						"1600.0"
+				"special_bonus_facet_pudge_flayers_hook"	"+0"
+			}
+
+			"AbilityCastRange"
+			{
+				"value"						"1300"
+				"special_bonus_facet_pudge_flayers_hook"	"+15%"
+			}
+
+			"distance_to_damage"
+			{
+				"special_bonus_facet_pudge_flayers_hook"	 "20"
+			}
+
+			"min_distance_damage"
+			{
+				"special_bonus_facet_pudge_flayers_hook"	"10"
+			}
+
+			"cooldown_reduction_pct_allied_hook"
+			{
+				"special_bonus_facet_pudge_flayers_hook"	"50"
+			}
+		}
     }
+
+	"pudge_consume_lua"
+	{
+		"BaseClass" "ability_lua"
+		"ScriptFile" "ability/pudge_consume.lua"
+
+		"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO"
+
+		"AbilityTextureName" "pudge_consume"
+
+		"IsGrantedByShard" "1"
+		"MaxLevel" "1"
+
+		"AbilityCooldown" "55"
+		"AbilityManaCost" "50"
+
+		"AbilityCastRange" "325"
+		"AbilityCastPoint" "0.225"
+
+
+		"AbilityValues"
+		{
+			"regen_pct" "5"
+		}
+	}
+
+	"pudge_eject_lua"
+	{
+		"BaseClass" "ability_lua"
+		"ScriptFile" "ability/pudge_eject.lua"
+
+		"AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+
+		"AbilityTextureName" "pudge_eject"
+
+		"IsGrantedByShard" "1"
+		"MaxLevel" "1"
+
+		"AbilityCooldown" "1"
+	}
 }
