@@ -19,7 +19,7 @@
 
 		// ORIGINAL FIX
 		"DOTA_Tooltip_ability_troll_warlord_berserkers_rage_Note0"				""
-		"DOTA_Tooltip_ability_troll_warlord_switch_stance_Note0"				"Перезарядка некоторых предметов зависит от того, какой тип атаки герой имел при их использовании."		
+		"DOTA_Tooltip_ability_troll_warlord_switch_stance_Note0"				"Перезарядка некоторых предметов зависит от того, какой тип атаки герой имел при их использовании."
 
 
         // Lina Overheat
@@ -44,7 +44,18 @@
 
 
 		// Pudge
-		"DOTA_Tooltip_ability_special_bonus_unique_pudge_3_Description" "Также увеличивает множитель силы в {s:bonus_strength_damage} раза" 
+		"DOTA_Tooltip_ability_special_bonus_unique_pudge_3_Description" "Также увеличивает множитель силы в {s:bonus_strength_damage} раза"
+
+		"DOTA_Tooltip_ability_pudge_consume_lua" "Swallow"
+		"DOTA_Tooltip_ability_pudge_consume_lua_Description" "Герой поглощает выбранного союзника, пряча его в своем теле и восстанавливая ему часть от его максимального здоровья."
+		"DOTA_Tooltip_ability_pudge_consume_lua_regen_pct" "%ВОССТ. ОТ МАКС. ЗДОРОВЬЯ:"
+		"DOTA_Tooltip_ability_pudge_consume_lua_Note0" "Способность нельзя украсть."
+		"DOTA_Tooltip_ability_pudge_consume_lua_Note1" "Ауры действуют как обычно."
+		"DOTA_Tooltip_ability_pudge_consume_lua_Lore" "Мясник любит вкус своих союзников, но съесть их не может."
+
+
+		"DOTA_Tooltip_ability_pudge_eject_lua" "Eject"
+		"DOTA_Tooltip_ability_pudge_eject_lua_Description" "Выплевывает поглощенного героя."
 
         // Queen
         "DOTA_Tooltip_ability_queenofpain_shadow_strike_scepter_Description" "Способность применяется по области радиусом %aoe_radius%. Когда эффект этой способности на вражеском герое заканчивается или обновляется, он издаёт крик от способности Scream of Pain. \nУвеличивает длительность на %duration_tooltip% и урон от попадания на %strike_damage_tooltip%."
@@ -66,7 +77,7 @@
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Description" "Герой получает пассивную способность получить фокус после атаки. Атака с фокусом наносит критический урон. \nГерой может активировать способность, чтобы увеличить критический урон."
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note1" "Больше не увеличивает шанс при использовании Stifling Dagger."
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_Note2" "Не действует на постройки."
-		"DOTA_Tooltip_ability_phantom_assassin_crit_new_crit_chance" "%ШАНС НА ФОКУС:" 
+		"DOTA_Tooltip_ability_phantom_assassin_crit_new_crit_chance" "%ШАНС НА ФОКУС:"
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_passive_crit_damage" "%ПАССИВНЫЙ УРОН:"
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_active_crit_damage" "%АКТИВНЫЙ УРОН:"
 		"DOTA_Tooltip_ability_phantom_assassin_crit_new_duration" "ДЛИТЕЛЬНОСТЬ УСИЛЕНИЯ:"
@@ -149,7 +160,7 @@
 
 		"DOTA_Tooltip_modifier_weaver_damage_range" "Rewoven"
 		"DOTA_Tooltip_modifier_weaver_damage_range_Description" "Дальность атаки увеличена на %dMODIFIER_PROPERTY_ATTACK_RANGE_BONUS%."
-		
+
 		// SNIPER
 		"DOTA_Tooltip_ability_sniper_accurate_shooting" "Holding a Position"
 		"DOTA_Tooltip_ability_sniper_accurate_shooting_Description" "Владелец способности получает складываемый эффект, получающий новый заряд каждые %stack_regen_time% сек. Каждый заряд даёт дополнительную дальность атаки. \n Способность отключится и сбросит заряды, когда владелец способности получит урон."
@@ -188,7 +199,7 @@
 
 		"DOTA_Tooltip_modifier_morphling_bubble_Description" "Скорость увеличена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%. Базовый урон увеличен на %dMODIFIER_PROPERTY_BASEATTACK_BONUSDAMAGE%."
 
-		
+
 		"DOTA_Tooltip_ability_morphling_adaptive_strike_agi_damage_agi" "УРОН ЗА ЕД. ЛОВКОСТИ:"
 		"DOTA_Tooltip_ability_morphling_adaptive_strike_agi_damage_max"					""
 		"DOTA_Tooltip_ability_morphling_adaptive_strike_agi_damage_min"					""
