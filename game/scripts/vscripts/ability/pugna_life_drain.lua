@@ -23,6 +23,11 @@ function pugna_life_drain_lua:OnSpellStart()
     self.target = self:GetCursorTarget()
     self.caster = self:GetCaster()
 
+    if self.target:TriggerSpellAbsorb(self) then
+        self.caster:Interrupt()
+        return
+    end
+
     self.isAlly = self.caster:GetTeamNumber() == self.target:GetTeamNumber()
 
     if self.isAlly then
@@ -73,6 +78,10 @@ function modifier_pugna_life_drain_enemy:OnIntervalThink()
     local caster = ability:GetCaster()
     local target = self:GetParent()
 
+    if (caster:GetAbsOrigin() - target:GetAbsOrigin()):Length2D() >= ability:GetSpecialValueFor("AbilityCastRange") + ability:GetSpecialValueFor("drain_buffer") then
+        caster:Interrupt()
+    end
+
     local heal = ApplyDamage({
         victim = target,
         attacker = caster,
@@ -119,6 +128,9 @@ function modifier_pugna_life_drain_ally:OnDestroy()
     ParticleManager:DestroyParticle(self.particle, false)
     ParticleManager:ReleaseParticleIndex(self.particle)
 end
+
+function modifier_pugna_life_drain_ally:IsPurgable() return false end
+function modifier_pugna_life_drain_enemy:IsPurgable() return false end
 
 LinkLuaModifier("modifier_pugna_life_drain_enemy", "ability/pugna_life_drain.lua", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_pugna_life_drain_ally", "ability/pugna_life_drain.lua", LUA_MODIFIER_MOTION_NONE)
