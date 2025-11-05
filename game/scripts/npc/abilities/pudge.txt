@@ -70,7 +70,6 @@
 		"MaxLevel" "1"
 
 		"AbilityCooldown" "55"
-		"AbilityHealthCost" "125"
 		"AbilityManaCost" "50"
 
 		"AbilityCastRange" "325"
