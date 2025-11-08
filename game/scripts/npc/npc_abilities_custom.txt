@@ -35,6 +35,7 @@
 
 // 9.01b
 #base "abilities/morphling.txt"
+#base "abilities/terrorblade.txt"
  
 
 "DOTAAbilities"

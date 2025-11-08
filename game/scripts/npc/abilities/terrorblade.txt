@@ -1,0 +1,27 @@
+"DOTAAbilities"
+{
+    "terrorblade_sunder"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile" "ability/terrorblade_sunder.lua"
+
+        "AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO"
+        "AbilityUnitTargetFlags" "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+
+        "SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+
+        "AbilityTextureName" "terrorblade_sunder"
+    }
+
+    "terrorblade_dark_unity"
+    {   
+        "AbilityValues"
+        {
+            "radius"
+            {
+                "value" "1600"
+            }
+            "outside_radius_bonus_damage_pct" "-25"
+        }
+    }
+}
