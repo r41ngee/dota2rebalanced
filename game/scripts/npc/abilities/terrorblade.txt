@@ -6,7 +6,7 @@
         "ScriptFile" "ability/terrorblade_sunder.lua"
 
         "AbilityUnitTargetType" "DOTA_UNIT_TARGET_HERO"
-        "AbilityUnitTargetFlags" "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+        "AbilityUnitTargetFlags" "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO | DOTA_UNIT_TARGET_FLAG_NOT_ILLUSIONS"
 
         "SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
 
@@ -19,9 +19,9 @@
         {
             "radius"
             {
-                "value" "1600"
+                "value" "1450"
             }
-            "outside_radius_bonus_damage_pct" "-25"
+            "outside_radius_bonus_damage_pct" "-35"
         }
     }
 }
