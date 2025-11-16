@@ -35,7 +35,8 @@
 
 // 9.01b
 #base "abilities/morphling.txt"
- 
+#base "abilities/templar_assassin.txt"
+
 
 "DOTAAbilities"
 {

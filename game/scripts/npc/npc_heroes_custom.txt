@@ -173,4 +173,9 @@
 		"Ability5" "pudge_eject_lua"
 		"Ability7" "pudge_innate_graft_flesh"
 	}
+
+	"npc_dota_hero_templar_assassin"
+	{
+		"Ability1" "templar_assassin_refraction_lua"
+	}
 }

@@ -1,0 +1,53 @@
+"DOTAAbilities"
+{
+    "templar_assassin_refraction_lua"
+    {
+        "BaseClass" "ability_lua"
+        "ScriptFile" "ability/templar_refraction.lua"
+
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+
+        "AbilityTextureName" "templar_assassin_refraction"
+        "AbilityCooldown"				"14.0"
+		"AbilityManaCost"				"95"
+
+        "AbilityValues"
+        {
+			"stacks"
+			{
+				"value"						"3 4 5 6"
+				"special_bonus_unique_templar_assassin"		"+4"
+				"CalculateSpellDamageTooltip"				"0"
+				"DamageTypeTooltip"							"DAMAGE_TYPE_NONE"
+			}
+			"stack_health"
+			{
+				"value"						"30"
+			}
+			"damage"				
+			{
+				"value"						"15 30 45 60"
+				"special_bonus_unique_templar_assassin_refraction_damage"		"+40"
+			}
+			"refresh_damage_on_break"
+			{
+				"special_bonus_facet_templar_assassin_refractor"	"+1"
+			}
+			"duration"					
+			{
+				"value"		"17"
+			}
+
+			"cast_while_disabled"
+			{
+				"special_bonus_unique_templar_assassin_refraction_disable_cast"				"+1"
+			}
+			"dispels"
+			{
+				"special_bonus_unique_templar_assassin_4"				"+1"
+			}
+        }
+    }
+}
