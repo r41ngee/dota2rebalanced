@@ -59,6 +59,10 @@ function modifier_templar_refraction_lua:OnCreated()
     self:SetHasCustomTransmitterData(true)
 end
 
+function modifier_templar_refraction_lua:OnRefresh()
+    self:OnCreated()
+end
+
 function modifier_templar_refraction_lua:AddCustomTransmitterData()
     return {
         barrier_max = self.barrier_max,
